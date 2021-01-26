@@ -1,0 +1,10 @@
+{
+  "name_id": "house_of_the_fonvizin_brothers",
+  "loc": [55.766228, 37.627103],
+  "name_code": "\\u0414\\u043e\\u043c\\u0020\\u0431\\u0440\\u0430\\u0442\\u044c\\u0435\\u0432\\u0020\\u0424\\u043e\\u043d\\u0432\\u0438\\u0437\\u0438\\u043d\\u044b\\u0445",
+  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Moscow%2C_Rozhdestvensky_Boulevard_12-8c1_2012.jpg/548px-Moscow%2C_Rozhdestvensky_Boulevard_12-8c1_2012.jpg",
+  "wiki_link": "https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D0%BC_%D0%B1%D1%80%D0%B0%D1%82%D1%8C%D0%B5%D0%B2_%D0%A4%D0%BE%D0%BD%D0%B2%D0%B8%D0%B7%D0%B8%D0%BD%D1%8B%D1%85",
+  "marker_color": "purple",
+  "marker_icon": "star",
+  "marker_icon_prefix": "fa"
+}

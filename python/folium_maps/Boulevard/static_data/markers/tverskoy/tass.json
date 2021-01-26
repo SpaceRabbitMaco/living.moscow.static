@@ -1,0 +1,10 @@
+{
+  "name_id": "tass",
+  "loc": [55.757655, 37.599561],
+  "name_code": "\\u0417\\u0434\\u0430\\u043d\\u0438\\u0435\\u0020\\u0422\\u0410\\u0421\\u0421",
+  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Moscow_TASS_3542.JPG/548px-Moscow_TASS_3542.JPG",
+  "wiki_link": "https://ru.wikipedia.org/wiki/%D0%97%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%A2%D0%90%D0%A1%D0%A1",
+  "marker_color": "beige",
+  "marker_icon": "star",
+  "marker_icon_prefix": "fa"
+}

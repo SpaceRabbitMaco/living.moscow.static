@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c38564e769a444bfaef8a55bd260e6ab {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://unpkg.com/leaflet.featuregroup.subgroup@1.0.2/dist/leaflet.featuregroup.subgroup.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c38564e769a444bfaef8a55bd260e6ab" ></div>
+        
+</body>
+<script>    
+    
+            var map_c38564e769a444bfaef8a55bd260e6ab = L.map(
+                "map_c38564e769a444bfaef8a55bd260e6ab",
+                {
+                    center: [55.753006, 37.625473],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c1d807f8b72e4009a30d66737c698299 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c38564e769a444bfaef8a55bd260e6ab);
+        
+    
+        function geo_json_bd5997840d5548539fc958fac568adf1_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#154875", "fillColor": "#519de0", "opacity": 0.6};
+            }
+        }
+        function geo_json_bd5997840d5548539fc958fac568adf1_onEachFeature(feature, layer) {
+            layer.on({
+                click: function(e) {
+                    map_c38564e769a444bfaef8a55bd260e6ab.fitBounds(e.target.getBounds());
+                }
+            });
+        };
+        var geo_json_bd5997840d5548539fc958fac568adf1 = L.geoJson(null, {
+                onEachFeature: geo_json_bd5997840d5548539fc958fac568adf1_onEachFeature,
+            
+                style: geo_json_bd5997840d5548539fc958fac568adf1_styler,
+        }).addTo(map_c38564e769a444bfaef8a55bd260e6ab);
+
+        function geo_json_bd5997840d5548539fc958fac568adf1_add (data) {
+            geo_json_bd5997840d5548539fc958fac568adf1.addData(data);
+        }
+            geo_json_bd5997840d5548539fc958fac568adf1_add({"features": [{"geometry": {"coordinates": [[[37.62225687503815, 55.75903087870273], [37.62201547622683, 55.758046860730715], [37.61976242065432, 55.75686057292868], [37.61905431747439, 55.75693905618801], [37.61655986309054, 55.7554689781434], [37.61816382408145, 55.75457543340731], [37.62193500995638, 55.75292715191152], [37.62239098548891, 55.75214826938986], [37.623571157455466, 55.749612265058865], [37.6256310939789, 55.74979945196607], [37.628077268600485, 55.749829643318634], [37.632111310958884, 55.74950357547474], [37.63311982154849, 55.75238374714125], [37.63338804244998, 55.75364564215259], [37.63327002525332, 55.754327893744644], [37.63244390487673, 55.75502824579813], [37.62997627258301, 55.75659493610992], [37.62623190879824, 55.75921198359951], [37.625813484191916, 55.759447418708056], [37.62518048286441, 55.759513823225255], [37.6246225833893, 55.75948363936781], [37.62225687503815, 55.75903087870273]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+        
+    
+        function geo_json_8f60ab2201d2431bb4082bbf0814fc92_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#228B22", "fillColor": "#228B22", "opacity": 0.3};
+            }
+        }
+        function geo_json_8f60ab2201d2431bb4082bbf0814fc92_onEachFeature(feature, layer) {
+            layer.on({
+                click: function(e) {
+                    map_c38564e769a444bfaef8a55bd260e6ab.fitBounds(e.target.getBounds());
+                }
+            });
+        };
+        var geo_json_8f60ab2201d2431bb4082bbf0814fc92 = L.geoJson(null, {
+                onEachFeature: geo_json_8f60ab2201d2431bb4082bbf0814fc92_onEachFeature,
+            
+                style: geo_json_8f60ab2201d2431bb4082bbf0814fc92_styler,
+        }).addTo(map_c38564e769a444bfaef8a55bd260e6ab);
+
+        function geo_json_8f60ab2201d2431bb4082bbf0814fc92_add (data) {
+            geo_json_8f60ab2201d2431bb4082bbf0814fc92.addData(data);
+        }
+            geo_json_8f60ab2201d2431bb4082bbf0814fc92_add({"features": [{"geometry": {"coordinates": [[[37.628790736198425, 55.750016829182876], [37.62940227985382, 55.749947389370284], [37.630523443222046, 55.74987794943411], [37.63185381889343, 55.749805490238494], [37.632030844688416, 55.74988096856435], [37.63224005699157, 55.75028552990178], [37.63239562511444, 55.750792735203554], [37.63268530368805, 55.751616929754064], [37.633066177368164, 55.75243808795894], [37.63319492340088, 55.7530207375245], [37.633076906204224, 55.75310828515273], [37.63273358345031, 55.75305696415311], [37.63111352920532, 55.75273092328441], [37.630560994148254, 55.75276413127531], [37.62924134731293, 55.75280035814223], [37.62890875339508, 55.75280035814223], [37.62798607349396, 55.75272790437476], [37.626827359199524, 55.75254073151914], [37.62563645839691, 55.75238676607757], [37.62545943260193, 55.75224487581882], [37.62547552585602, 55.751472017688194], [37.62541651725769, 55.75012551733702], [37.625550627708435, 55.75004400124979], [37.626575231552124, 55.75004098213218], [37.628790736198425, 55.750016829182876]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+        
+    
+            var feature_group_07c6f873e9ba4355a1c867fe63504554 = L.featureGroup(
+                {}
+            ).addTo(map_c38564e769a444bfaef8a55bd260e6ab);
+        
+    
+            var feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f = L.featureGroup.subGroup(
+                feature_group_07c6f873e9ba4355a1c867fe63504554
+            );
+            feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f.addTo(map_c38564e769a444bfaef8a55bd260e6ab);
+        
+    
+            var marker_4bcfd9fdc2234cfbb204bc0d5bae69e2 = L.marker(
+                [55.750164, 37.630863],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_89d9fb3eb6414027b20b549dc6b2e8a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4bcfd9fdc2234cfbb204bc0d5bae69e2.setIcon(icon_89d9fb3eb6414027b20b549dc6b2e8a2);
+        
+    
+        var popup_52541243c0c9417d90d86d6163a52860 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3141fc08ddb24a91af024ef62d394c76 = $(`<div id="html_3141fc08ddb24a91af024ef62d394c76" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0426\u0435\u0440\u043a\u043e\u0432\u044c\u0020\u0417\u0430\u0447\u0430\u0442\u0438\u044f\u0020\u0410\u043d\u043d\u044b\u002c\u0020\u0447\u0442\u043e\u0020\u0432\u0020\u0423\u0433\u043b\u0443\u000a</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C_%D0%97%D0%B0%D1%87%D0%B0%D1%82%D0%B8%D1%8F_%D0%90%D0%BD%D0%BD%D1%8B,_%D1%87%D1%82%D0%BE_%D0%B2_%D0%A3%D0%B3%D0%BB%D1%83' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Church_of_Anna%27s_Conceiving_in_Ugol_05_%282017%29.jpg/1073px-Church_of_Anna%27s_Conceiving_in_Ugol_05_%282017%29.jpg'</div>`)[0];
+            popup_52541243c0c9417d90d86d6163a52860.setContent(html_3141fc08ddb24a91af024ef62d394c76);
+        
+
+        marker_4bcfd9fdc2234cfbb204bc0d5bae69e2.bindPopup(popup_52541243c0c9417d90d86d6163a52860)
+        ;
+
+        
+    
+    
+            var marker_0b461601fdfa476090cf45e41ba644b2 = L.marker(
+                [55.755726, 37.627319],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_cb80552853414c12a5f47dc7c48abb23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0b461601fdfa476090cf45e41ba644b2.setIcon(icon_cb80552853414c12a5f47dc7c48abb23);
+        
+    
+        var popup_30bad92fe1494180872b7bc5d4eba425 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6730890347f4100beee8c1623898990 = $(`<div id="html_e6730890347f4100beee8c1623898990" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0414\u043e\u043c\u0020\u0430\u043a\u0446\u0438\u043e\u043d\u0435\u0440\u043d\u043e\u0433\u043e\u0020\u043e\u0431\u0449\u0435\u0441\u0442\u0432\u0430\u0020\u0410\u0420\u041a\u041e\u0421</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D0%BC_%D0%B0%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0_%D0%90%D0%A0%D0%9A%D0%9E%D0%A1' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Moscow_ARKOS_X66.jpg/981px-Moscow_ARKOS_X66.jpg'</div>`)[0];
+            popup_30bad92fe1494180872b7bc5d4eba425.setContent(html_e6730890347f4100beee8c1623898990);
+        
+
+        marker_0b461601fdfa476090cf45e41ba644b2.bindPopup(popup_30bad92fe1494180872b7bc5d4eba425)
+        ;
+
+        
+    
+    
+            var marker_ba1caf3d5b814711874a6cbd1909bcb6 = L.marker(
+                [55.756104, 37.62612],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_e8af11608485458098c27ac2081c535a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba1caf3d5b814711874a6cbd1909bcb6.setIcon(icon_e8af11608485458098c27ac2081c535a);
+        
+    
+        var popup_b6199500897b4f3a8c65d635b44c81ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3236b0d34c384fe79b1d231e5ebe8371 = $(`<div id="html_3236b0d34c384fe79b1d231e5ebe8371" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0426\u0435\u0440\u043a\u043e\u0432\u044c\u0020\u041a\u043e\u0441\u043c\u044b\u0020\u0438\u0020\u0414\u0430\u043c\u0438\u0430\u043d\u0430\u0020\u0432\u0020\u0421\u0442\u0430\u0440\u044b\u0445\u0020\u041f\u0430\u043d\u0435\u0445</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C_%D0%9A%D0%BE%D1%81%D0%BC%D1%8B_%D0%B8_%D0%94%D0%B0%D0%BC%D0%B8%D0%B0%D0%BD%D0%B0_%D0%B2_%D0%A1%D1%82%D0%B0%D1%80%D1%8B%D1%85_%D0%9F%D0%B0%D0%BD%D0%B5%D1%85' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Kosma_Damian_Kitay_gorod1.JPG/568px-Kosma_Damian_Kitay_gorod1.JPG'</div>`)[0];
+            popup_b6199500897b4f3a8c65d635b44c81ce.setContent(html_3236b0d34c384fe79b1d231e5ebe8371);
+        
+
+        marker_ba1caf3d5b814711874a6cbd1909bcb6.bindPopup(popup_b6199500897b4f3a8c65d635b44c81ce)
+        ;
+
+        
+    
+    
+            var marker_2549ee9c422249f891dba96629f570be = L.marker(
+                [55.752377, 37.626849],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_786f6a16f57f47fdbcbc4294ac8130f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2549ee9c422249f891dba96629f570be.setIcon(icon_786f6a16f57f47fdbcbc4294ac8130f3);
+        
+    
+        var popup_029c72f9d14a424993eacb935444fca8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c05438d7195644a7b7bfba6f6f6dea22 = $(`<div id="html_c05438d7195644a7b7bfba6f6f6dea22" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0421\u0442\u0430\u0440\u044b\u0439\u0020\u0410\u043d\u0433\u043b\u0438\u0439\u0441\u043a\u0438\u0439\u0020\u0434\u0432\u043e\u0440</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D1%80%D1%8B%D0%B9_%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Zaryadye_Park_Moscow_img06_asv2018-01.jpg/1200px-Zaryadye_Park_Moscow_img06_asv2018-01.jpg'</div>`)[0];
+            popup_029c72f9d14a424993eacb935444fca8.setContent(html_c05438d7195644a7b7bfba6f6f6dea22);
+        
+
+        marker_2549ee9c422249f891dba96629f570be.bindPopup(popup_029c72f9d14a424993eacb935444fca8)
+        ;
+
+        
+    
+    
+            var marker_96f350fbdae9495bb737e58d954f9ffc = L.marker(
+                [55.755759, 37.623188],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_b597286939d44b27a75ca87144999bfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_96f350fbdae9495bb737e58d954f9ffc.setIcon(icon_b597286939d44b27a75ca87144999bfa);
+        
+    
+        var popup_c651adc3afea4c3290f6493d97d64014 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4377855eb824be881d1b506d918a652 = $(`<div id="html_e4377855eb824be881d1b506d918a652" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0426\u0435\u0440\u043a\u043e\u0432\u044c\u0020\u0411\u043e\u0433\u043e\u044f\u0432\u043b\u0435\u043d\u0438\u044f\u0020\u0413\u043e\u0441\u043f\u043e\u0434\u043d\u044f</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%91%D0%BE%D0%B3%D0%BE%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D1%8B%D1%80%D1%8C_(%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0)' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Moscow_BogoyavlenskyMonastery_E27.jpg/760px-Moscow_BogoyavlenskyMonastery_E27.jpg'</div>`)[0];
+            popup_c651adc3afea4c3290f6493d97d64014.setContent(html_e4377855eb824be881d1b506d918a652);
+        
+
+        marker_96f350fbdae9495bb737e58d954f9ffc.bindPopup(popup_c651adc3afea4c3290f6493d97d64014)
+        ;
+
+        
+    
+    
+            var marker_c5c80c02988444d5987edccb1e861ac8 = L.marker(
+                [55.754889, 37.626044],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_b0b76e28115e48e7ad3c6135d4579a45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c5c80c02988444d5987edccb1e861ac8.setIcon(icon_b0b76e28115e48e7ad3c6135d4579a45);
+        
+    
+        var popup_5e16ccbfd6ec4ba79922bee92a7b48b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_679f132d756940baa713c1f1a1d1bcb7 = $(`<div id="html_679f132d756940baa713c1f1a1d1bcb7" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0417\u0434\u0430\u043d\u0438\u0435\u0020\u0431\u0438\u0440\u0436\u0438</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%97%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B1%D0%B8%D1%80%D0%B6%D0%B8_(%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0)' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Moskovskaya_Birzha_01.jpg/1184px-Moskovskaya_Birzha_01.jpg'</div>`)[0];
+            popup_5e16ccbfd6ec4ba79922bee92a7b48b5.setContent(html_679f132d756940baa713c1f1a1d1bcb7);
+        
+
+        marker_c5c80c02988444d5987edccb1e861ac8.bindPopup(popup_5e16ccbfd6ec4ba79922bee92a7b48b5)
+        ;
+
+        
+    
+    
+            var marker_b59a885128f9405d83a65c9e2a8df724 = L.marker(
+                [55.758464, 37.624134],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_cac57cd715d24b598cb6df02d2730e9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b59a885128f9405d83a65c9e2a8df724.setIcon(icon_cac57cd715d24b598cb6df02d2730e9f);
+        
+    
+        var popup_dd7d38f9b12542979907956ad3f5d983 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e18b52e6b41d4212a010e773e2831593 = $(`<div id="html_e18b52e6b41d4212a010e773e2831593" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0410\u043f\u0442\u0435\u043a\u0430\u0020\u0424\u0435\u0440\u0440\u0435\u0439\u043d\u0430</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%90%D0%BF%D1%82%D0%B5%D0%BA%D0%B0_%D0%A4%D0%B5%D1%80%D1%80%D0%B5%D0%B9%D0%BD%D0%B0' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Moscow_Nikolskaya21_G09.jpg/630px-Moscow_Nikolskaya21_G09.jpg'</div>`)[0];
+            popup_dd7d38f9b12542979907956ad3f5d983.setContent(html_e18b52e6b41d4212a010e773e2831593);
+        
+
+        marker_b59a885128f9405d83a65c9e2a8df724.bindPopup(popup_dd7d38f9b12542979907956ad3f5d983)
+        ;
+
+        
+    
+    
+            var marker_e1925b47485f4e00b9553a51707a825f = L.marker(
+                [55.752601, 37.63063],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_7ac54bccc78d4a7db416d7ee8ead3da0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e1925b47485f4e00b9553a51707a825f.setIcon(icon_7ac54bccc78d4a7db416d7ee8ead3da0);
+        
+    
+        var popup_72ac20e627264e5cb19c5854d08d919d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5e7628d967a4b359f34bfdcd6049cc6 = $(`<div id="html_d5e7628d967a4b359f34bfdcd6049cc6" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0426\u0435\u0440\u043a\u043e\u0432\u044c\u0020\u0413\u0435\u043e\u0440\u0433\u0438\u044f\u0020\u041f\u043e\u0431\u0435\u0434\u043e\u043d\u043e\u0441\u0446\u0430\u0020\u043d\u0430\u0020\u041f\u0441\u043a\u043e\u0432\u0441\u043a\u043e\u0439\u0020\u0433\u043e\u0440\u0435\u000a</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C_%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8%D1%8F_%D0%9F%D0%BE%D0%B1%D0%B5%D0%B4%D0%BE%D0%BD%D0%BE%D1%81%D1%86%D0%B0_%D0%BD%D0%B0_%D0%9F%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%B3%D0%BE%D1%80%D0%B5' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/c/c8/%D0%A5%D1%80%D0%B0%D0%BC_%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8%D1%8F_%D0%9F%D0%BE%D0%B1%D0%B5%D0%B4%D0%BE%D0%BD%D0%BE%D1%81%D1%86%D0%B0.jpg'</div>`)[0];
+            popup_72ac20e627264e5cb19c5854d08d919d.setContent(html_d5e7628d967a4b359f34bfdcd6049cc6);
+        
+
+        marker_e1925b47485f4e00b9553a51707a825f.bindPopup(popup_72ac20e627264e5cb19c5854d08d919d)
+        ;
+
+        
+    
+    
+            var marker_a4919e2858a64996b0438b90a3f455f6 = L.marker(
+                [55.756849, 37.621779],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_1eefc129f9244f5e8a8988809aa62daf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a4919e2858a64996b0438b90a3f455f6.setIcon(icon_1eefc129f9244f5e8a8988809aa62daf);
+        
+    
+        var popup_484c3d0d1b8c4e21819f79352f89f1c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_247540ce6caa44a4abb36a8e11caca58 = $(`<div id="html_247540ce6caa44a4abb36a8e11caca58" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0427\u0430\u0441\u043e\u0432\u043d\u044f\u0020\u041d\u0438\u043a\u043e\u043b\u0430\u044f\u0020\u0427\u0443\u0434\u043e\u0442\u0432\u043e\u0440\u0446\u0430\u0020\u0432\u0020\u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432\u0441\u043a\u043e\u043c\u0020\u0433\u0440\u0435\u0447\u0435\u0441\u043a\u043e\u043c\u0020\u043c\u043e\u043d\u0430\u0441\u0442\u044b\u0440\u0435</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%BE-%D0%93%D1%80%D0%B5%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D1%8B%D1%80%D1%8C' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Moscow_Nikolskaya11-13_G05.jpg/1016px-Moscow_Nikolskaya11-13_G05.jpg'</div>`)[0];
+            popup_484c3d0d1b8c4e21819f79352f89f1c6.setContent(html_247540ce6caa44a4abb36a8e11caca58);
+        
+
+        marker_a4919e2858a64996b0438b90a3f455f6.bindPopup(popup_484c3d0d1b8c4e21819f79352f89f1c6)
+        ;
+
+        
+    
+    
+            var marker_2b94b3730efc43119c1d354cecca70ca = L.marker(
+                [55.755965, 37.618636],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_218638db53db4661aa197b0ce8bacaba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2b94b3730efc43119c1d354cecca70ca.setIcon(icon_218638db53db4661aa197b0ce8bacaba);
+        
+    
+        var popup_ae876540bea64fa7bf70c26e6c7044dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d50c98939724e7393aedc2e88ac9050 = $(`<div id="html_2d50c98939724e7393aedc2e88ac9050" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0414\u043e\u043c\u0020\u0433\u0443\u0431\u0435\u0440\u043d\u0441\u043a\u043e\u0433\u043e\u0020\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D0%BC_%D0%B3%D1%83%D0%B1%D0%B5%D1%80%D0%BD%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Moscow_Red_Mint_asv2018-09_img1.jpg/1200px-Moscow_Red_Mint_asv2018-09_img1.jpg'</div>`)[0];
+            popup_ae876540bea64fa7bf70c26e6c7044dd.setContent(html_2d50c98939724e7393aedc2e88ac9050);
+        
+
+        marker_2b94b3730efc43119c1d354cecca70ca.bindPopup(popup_ae876540bea64fa7bf70c26e6c7044dd)
+        ;
+
+        
+    
+    
+            var marker_baeb3ff53b834931a3ece5ffc7b33d29 = L.marker(
+                [55.754559, 37.621315],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_21a9517607b5455691d194c0e7376eeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_baeb3ff53b834931a3ece5ffc7b33d29.setIcon(icon_21a9517607b5455691d194c0e7376eeb);
+        
+    
+        var popup_a06831f8c67f42d6b367b8ead83930f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8acbd7701d014208887017952a021110 = $(`<div id="html_8acbd7701d014208887017952a021110" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0413\u0423\u041c</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%93%D0%A3%D0%9C' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/GUM%2C_Moscow%2C_Russia.jpg/1200px-GUM%2C_Moscow%2C_Russia.jpg'</div>`)[0];
+            popup_a06831f8c67f42d6b367b8ead83930f0.setContent(html_8acbd7701d014208887017952a021110);
+        
+
+        marker_baeb3ff53b834931a3ece5ffc7b33d29.bindPopup(popup_a06831f8c67f42d6b367b8ead83930f0)
+        ;
+
+        
+    
+    
+            var marker_a930826d3b3146c0b15cf9d5b4703311 = L.marker(
+                [55.754515, 37.62405],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_c27430d61e8f4b3bb2a5cf28cc89d56c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a930826d3b3146c0b15cf9d5b4703311.setIcon(icon_c27430d61e8f4b3bb2a5cf28cc89d56c);
+        
+    
+        var popup_c38dddb55d41463cb5abc3fbde256519 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c82c05f634a841bbbc4d22219effb679 = $(`<div id="html_c82c05f634a841bbbc4d22219effb679" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0426\u0435\u0440\u043a\u043e\u0432\u044c\u0020\u0418\u043b\u0438\u0438\u0020\u041f\u0440\u043e\u0440\u043e\u043a\u0430</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C_%D0%98%D0%BB%D1%8C%D0%B8_%D0%9F%D1%80%D0%BE%D1%80%D0%BE%D0%BA%D0%B0_%D0%BD%D0%B0_%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%BE%D0%BC_%D0%BF%D0%BE%D0%B4%D0%B2%D0%BE%D1%80%D1%8C%D0%B5' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Moscow_Ilyinka3_D59.jpg/1001px-Moscow_Ilyinka3_D59.jpg'</div>`)[0];
+            popup_c38dddb55d41463cb5abc3fbde256519.setContent(html_c82c05f634a841bbbc4d22219effb679);
+        
+
+        marker_a930826d3b3146c0b15cf9d5b4703311.bindPopup(popup_c38dddb55d41463cb5abc3fbde256519)
+        ;
+
+        
+    
+    
+            var marker_cda43f4506e04417828b2d9507db9d9c = L.marker(
+                [55.757593, 37.627818],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_b51f47763de1412881f1ffd416d670a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cda43f4506e04417828b2d9507db9d9c.setIcon(icon_b51f47763de1412881f1ffd416d670a0);
+        
+    
+        var popup_5aa812545e6b43449bf56d2d8a84b460 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d119dcca7c54102bfa4ee85cc895c32 = $(`<div id="html_9d119dcca7c54102bfa4ee85cc895c32" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0425\u0440\u0430\u043c\u0020\u0410\u043f\u043e\u0441\u0442\u043e\u043b\u0430\u0020\u0418\u043e\u0430\u043d\u043d\u0430\u0020\u0411\u043e\u0433\u043e\u0441\u043b\u043e\u0432\u0430\u0020\u043f\u043e\u0434\u0020\u0412\u044f\u0437\u043e\u043c</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%90%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D0%BB%D0%B0_%D0%98%D0%BE%D0%B0%D0%BD%D0%BD%D0%B0_%D0%91%D0%BE%D0%B3%D0%BE%D1%81%D0%BB%D0%BE%D0%B2%D0%B0_%D0%BF%D0%BE%D0%B4_%D0%92%D1%8F%D0%B7%D0%BE%D0%BC' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/%D0%A6%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C_%D0%98%D0%B2%D0%B0%D0%BD%D0%B0_%D0%91%D0%BE%D0%B3%D0%BE%D1%81%D0%BB%D0%BE%D0%B2%D0%B0_%D0%BF%D0%BE%D0%B4_%D0%92%D1%8F%D0%B7%D0%BE%D0%BC.jpg/768px-%D0%A6%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C_%D0%98%D0%B2%D0%B0%D0%BD%D0%B0_%D0%91%D0%BE%D0%B3%D0%BE%D1%81%D0%BB%D0%BE%D0%B2%D0%B0_%D0%BF%D0%BE%D0%B4_%D0%92%D1%8F%D0%B7%D0%BE%D0%BC.jpg'</div>`)[0];
+            popup_5aa812545e6b43449bf56d2d8a84b460.setContent(html_9d119dcca7c54102bfa4ee85cc895c32);
+        
+
+        marker_cda43f4506e04417828b2d9507db9d9c.bindPopup(popup_5aa812545e6b43449bf56d2d8a84b460)
+        ;
+
+        
+    
+    
+            var marker_c8ded61dfba84ad880bb7de7c8cb2240 = L.marker(
+                [55.755202, 37.625876],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_d173875fa4c34ad4a7ae30cf104c6658 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c8ded61dfba84ad880bb7de7c8cb2240.setIcon(icon_d173875fa4c34ad4a7ae30cf104c6658);
+        
+    
+        var popup_40e3b92516b6492cb75a93650c0a40dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f043d2256b2c446fbcd87b9047cb4f60 = $(`<div id="html_f043d2256b2c446fbcd87b9047cb4f60" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0414\u043e\u0445\u043e\u0434\u043d\u044b\u0439\u0020\u0434\u043e\u043c\u0020\u0418\u043e\u0441\u0438\u0444\u043e\u002d\u0412\u043e\u043b\u043e\u043a\u043e\u043b\u0430\u043c\u0441\u043a\u043e\u0433\u043e\u0020\u043f\u043e\u0434\u0432\u043e\u0440\u044c\u044f</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9_%D0%B4%D0%BE%D0%BC_%D0%98%D0%BE%D1%81%D0%B8%D1%84%D0%BE-%D0%92%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0%D0%BC%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BF%D0%BE%D0%B4%D0%B2%D0%BE%D1%80%D1%8C%D1%8F' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Tverskoy_District%2C_Moscow%2C_Russia_-_panoramio_%28443%29.jpg/1082px-Tverskoy_District%2C_Moscow%2C_Russia_-_panoramio_%28443%29.jpg'</div>`)[0];
+            popup_40e3b92516b6492cb75a93650c0a40dd.setContent(html_f043d2256b2c446fbcd87b9047cb4f60);
+        
+
+        marker_c8ded61dfba84ad880bb7de7c8cb2240.bindPopup(popup_40e3b92516b6492cb75a93650c0a40dd)
+        ;
+
+        
+    
+    
+            var marker_c72f4499b9794dbeba6198dee62c6af1 = L.marker(
+                [55.755416, 37.619199],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_c54e7efe6cce481ea886dcda42f1c0bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c72f4499b9794dbeba6198dee62c6af1.setIcon(icon_c54e7efe6cce481ea886dcda42f1c0bf);
+        
+    
+        var popup_8a27af991e15478088ac4a627a37d910 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e80bcd202d04a69bc05c2df7cd35169 = $(`<div id="html_4e80bcd202d04a69bc05c2df7cd35169" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u041a\u0430\u0437\u0430\u043d\u0441\u043a\u0438\u0439\u0020\u0441\u043e\u0431\u043e\u0440\u000a</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80_(%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0)' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Kazansky_Cathedral_in_MSK.jpg/1200px-Kazansky_Cathedral_in_MSK.jpg'</div>`)[0];
+            popup_8a27af991e15478088ac4a627a37d910.setContent(html_4e80bcd202d04a69bc05c2df7cd35169);
+        
+
+        marker_c72f4499b9794dbeba6198dee62c6af1.bindPopup(popup_8a27af991e15478088ac4a627a37d910)
+        ;
+
+        
+    
+    
+            var marker_d78a451c8d49491783e4c7e51889549a = L.marker(
+                [55.752551, 37.627289],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_8e86fd076c1f4a7388e8cd94ba7cd53d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d78a451c8d49491783e4c7e51889549a.setIcon(icon_8e86fd076c1f4a7388e8cd94ba7cd53d);
+        
+    
+        var popup_2ab24f4baa8047b2b0d723c127e61d73 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4e98ac0f28642c2a5546da98442debe = $(`<div id="html_c4e98ac0f28642c2a5546da98442debe" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0426\u0435\u0440\u043a\u043e\u0432\u044c\u0020\u041c\u0430\u043a\u0441\u0438\u043c\u0430\u0020\u0418\u0441\u043f\u043e\u0432\u0435\u0434\u043d\u0438\u043a\u0430</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C_%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0_%D0%98%D1%81%D0%BF%D0%BE%D0%B2%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/6/69/Zerkov_Maxima_Ispovednika.jpg'</div>`)[0];
+            popup_2ab24f4baa8047b2b0d723c127e61d73.setContent(html_c4e98ac0f28642c2a5546da98442debe);
+        
+
+        marker_d78a451c8d49491783e4c7e51889549a.bindPopup(popup_2ab24f4baa8047b2b0d723c127e61d73)
+        ;
+
+        
+    
+    
+            var marker_57d2de31c109431aa89837771f8d69c3 = L.marker(
+                [55.753133, 37.623429],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_a16974a64a774a75afa57fd0545205c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_57d2de31c109431aa89837771f8d69c3.setIcon(icon_a16974a64a774a75afa57fd0545205c0);
+        
+    
+        var popup_e69a06e5d57e477592036caf87fa4771 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8708aa5374804afaa6373dfb5d1353e3 = $(`<div id="html_8708aa5374804afaa6373dfb5d1353e3" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0421\u0440\u0435\u0434\u043d\u0438\u0435\u0020\u0442\u043e\u0440\u0433\u043e\u0432\u044b\u0435\u0020\u0440\u044f\u0434\u044b</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%A1%D1%80%D0%B5%D0%B4%D0%BD%D0%B8%D0%B5_%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D1%8B%D0%B5_%D1%80%D1%8F%D0%B4%D1%8B' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Middle_Trade_Rows_Moscow_06-2015.jpg/1125px-Middle_Trade_Rows_Moscow_06-2015.jpg'</div>`)[0];
+            popup_e69a06e5d57e477592036caf87fa4771.setContent(html_8708aa5374804afaa6373dfb5d1353e3);
+        
+
+        marker_57d2de31c109431aa89837771f8d69c3.bindPopup(popup_e69a06e5d57e477592036caf87fa4771)
+        ;
+
+        
+    
+    
+            var marker_4dfee05f06834ce79b13a51d44c6b5b0 = L.marker(
+                [55.756527, 37.620701],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_fff6265b1e644b04965eec6ea5734eff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4dfee05f06834ce79b13a51d44c6b5b0.setIcon(icon_fff6265b1e644b04965eec6ea5734eff);
+        
+    
+        var popup_c320c887ccac4691bd2d83110b1da218 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ccac243d2d86467cba8ba2548db8cd9d = $(`<div id="html_ccac243d2d86467cba8ba2548db8cd9d" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0417\u0430\u0438\u043a\u043e\u043d\u043e\u0441\u043f\u0430\u0441\u0441\u043a\u0438\u0439\u0020\u043c\u043e\u043d\u0430\u0441\u0442\u044b\u0440\u044c\u000a</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B8%D0%BA%D0%BE%D0%BD%D0%BE%D1%81%D0%BF%D0%B0%D1%81%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D1%8B%D1%80%D1%8C' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Moscow_09-13_img10_Zaikonospassky.jpg/597px-Moscow_09-13_img10_Zaikonospassky.jpg'</div>`)[0];
+            popup_c320c887ccac4691bd2d83110b1da218.setContent(html_ccac243d2d86467cba8ba2548db8cd9d);
+        
+
+        marker_4dfee05f06834ce79b13a51d44c6b5b0.bindPopup(popup_c320c887ccac4691bd2d83110b1da218)
+        ;
+
+        
+    
+    
+            var marker_957338d46862457bb04b54795b95a541 = L.marker(
+                [55.753602, 37.627507],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_184f43eac2174bbb94523596cc0a4abc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_957338d46862457bb04b54795b95a541.setIcon(icon_184f43eac2174bbb94523596cc0a4abc);
+        
+    
+        var popup_cc891b37152e4e46877f9ff8572939fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_635e7184711147c68126568b195fa27a = $(`<div id="html_635e7184711147c68126568b195fa27a" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u041d\u043e\u0432\u044b\u0439\u0020\u0413\u043e\u0441\u0442\u0438\u043d\u044b\u0439\u0020\u0434\u0432\u043e\u0440</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9_%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D1%8B%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9_%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D1%8B%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80%2C_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0_04.jpg/1200px-%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9_%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D1%8B%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80%2C_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0_04.jpg'</div>`)[0];
+            popup_cc891b37152e4e46877f9ff8572939fb.setContent(html_635e7184711147c68126568b195fa27a);
+        
+
+        marker_957338d46862457bb04b54795b95a541.bindPopup(popup_cc891b37152e4e46877f9ff8572939fb)
+        ;
+
+        
+    
+    
+            var marker_b22b28dd6f3d49eb8f2774f825e87c63 = L.marker(
+                [55.755814, 37.61991],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_9ec919936ab0490cb6a2b668bb768941 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b22b28dd6f3d49eb8f2774f825e87c63.setIcon(icon_9ec919936ab0490cb6a2b668bb768941);
+        
+    
+        var popup_1c9b3523aca2475abf941c759262ae34 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1892dc3aaf384035a3e073e98b06a149 = $(`<div id="html_1892dc3aaf384035a3e073e98b06a149" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u041d\u0438\u043a\u043e\u043b\u044c\u0441\u043a\u0438\u0435\u0020\u0442\u043e\u0440\u0433\u043e\u0432\u044b\u0435\u0020\u0440\u044f\u0434\u044b</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B5_%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D1%8B%D0%B5_%D1%80%D1%8F%D0%B4%D1%8B' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Moscow_Nikolskaya5_NikolskyTradeRows_F07.jpg/1200px-Moscow_Nikolskaya5_NikolskyTradeRows_F07.jpg'</div>`)[0];
+            popup_1c9b3523aca2475abf941c759262ae34.setContent(html_1892dc3aaf384035a3e073e98b06a149);
+        
+
+        marker_b22b28dd6f3d49eb8f2774f825e87c63.bindPopup(popup_1c9b3523aca2475abf941c759262ae34)
+        ;
+
+        
+    
+    
+            var marker_160aedc43cc2413e9fec2756fc8aaa14 = L.marker(
+                [55.756399, 37.629054],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_20989867548b45cda4830a30c6963efa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_160aedc43cc2413e9fec2756fc8aaa14.setIcon(icon_20989867548b45cda4830a30c6963efa);
+        
+    
+        var popup_e7f634b7933c478ab5273cbcb06143ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16632d1375364e278811f2c88e416423 = $(`<div id="html_16632d1375364e278811f2c88e416423" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0417\u0434\u0430\u043d\u0438\u044f\u0020\u0421\u0435\u0432\u0435\u0440\u043d\u043e\u0433\u043e\u0020\u0441\u0442\u0440\u0430\u0445\u043e\u0432\u043e\u0433\u043e\u0020\u043e\u0431\u0449\u0435\u0441\u0442\u0432\u0430</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%97%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F_%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D0%BE%D0%B3%D0%BE_%D1%81%D1%82%D1%80%D0%B0%D1%85%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE_%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0#:~:text=%D0%97%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%81%D1%82%D1%80%D0%B0%D1%85%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%20%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0%20%E2%80%94%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81,%D0%B3%D0%BE%D0%B4%D0%B0%D1%85%20%D0%B4%D0%BB%D1%8F%20%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%81%D1%82%D1%80%D0%B0%D1%85%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%20%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0.' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Moscow_NorthernInsuranceBuilding_I01.jpg/1200px-Moscow_NorthernInsuranceBuilding_I01.jpg'</div>`)[0];
+            popup_e7f634b7933c478ab5273cbcb06143ab.setContent(html_16632d1375364e278811f2c88e416423);
+        
+
+        marker_160aedc43cc2413e9fec2756fc8aaa14.bindPopup(popup_e7f634b7933c478ab5273cbcb06143ab)
+        ;
+
+        
+    
+    
+            var marker_e97c9661cf01410b830c11ffd8923d60 = L.marker(
+                [55.753558, 37.626005],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_95fb6a5048b04c289df44973157c4a7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e97c9661cf01410b830c11ffd8923d60.setIcon(icon_95fb6a5048b04c289df44973157c4a7e);
+        
+    
+        var popup_3825ad2f57ac46468ef3f35460d5ef4d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0b55351ec694365a13aad185a7fcff3 = $(`<div id="html_c0b55351ec694365a13aad185a7fcff3" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0421\u0442\u0430\u0440\u044b\u0439\u0020\u0413\u043e\u0441\u0442\u0438\u043d\u044b\u0439\u0020\u0434\u0432\u043e\u0440</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D1%80%D1%8B%D0%B9_%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D1%8B%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gostiny_Dvor_Moscow.JPG/1200px-Gostiny_Dvor_Moscow.JPG'</div>`)[0];
+            popup_3825ad2f57ac46468ef3f35460d5ef4d.setContent(html_c0b55351ec694365a13aad185a7fcff3);
+        
+
+        marker_e97c9661cf01410b830c11ffd8923d60.bindPopup(popup_3825ad2f57ac46468ef3f35460d5ef4d)
+        ;
+
+        
+    
+    
+            var marker_5113eedbc34049749df3c3a80651c453 = L.marker(
+                [55.757462, 37.622452],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_6bb353cf26204425b323da5cf760b747 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5113eedbc34049749df3c3a80651c453.setIcon(icon_6bb353cf26204425b323da5cf760b747);
+        
+    
+        var popup_730303912e4440f6933b76daf38e3ad3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ceb925c60fa54690997b70a823c8ef75 = $(`<div id="html_ceb925c60fa54690997b70a823c8ef75" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u041c\u043e\u0441\u043a\u043e\u0432\u0441\u043a\u0438\u0439\u0020\u043f\u0435\u0447\u0430\u0442\u043d\u044b\u0439\u0020\u0434\u0432\u043e\u0440</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D1%8B%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80#:~:text=%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%CC%81%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%87%D0%B0%CC%81%D1%82%D0%BD%D1%8B%D0%B9%20%D0%B4%D0%B2%D0%BE%D1%80%20%E2%80%94%20%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F%20%D0%B2,%D1%81%D0%BE%D1%81%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D1%83%20%D1%81%20%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%BE%2D%D0%93%D1%80%D0%B5%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%BC%20%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D1%8B%D1%80%D1%91%D0%BC.' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Moscow_PrintYard_F14.jpg/956px-Moscow_PrintYard_F14.jpg'</div>`)[0];
+            popup_730303912e4440f6933b76daf38e3ad3.setContent(html_ceb925c60fa54690997b70a823c8ef75);
+        
+
+        marker_5113eedbc34049749df3c3a80651c453.bindPopup(popup_730303912e4440f6933b76daf38e3ad3)
+        ;
+
+        
+    
+    
+            var marker_3aee2e01cbd74a25bd69e92c948b56a1 = L.marker(
+                [55.753243, 37.632283],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_f19ad9e52b34469291d7038925cc8879 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3aee2e01cbd74a25bd69e92c948b56a1.setIcon(icon_f19ad9e52b34469291d7038925cc8879);
+        
+    
+        var popup_b6793c927e8948ad9588f78d6b7b81b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25e8bfb2d3c14599a4ff6b3351129b08 = $(`<div id="html_25e8bfb2d3c14599a4ff6b3351129b08" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0426\u0435\u0440\u043a\u043e\u0432\u044c\u0020\u0420\u043e\u0436\u0434\u0435\u0441\u0442\u0432\u0430\u0020\u0418\u043e\u0430\u043d\u043d\u0430\u0020\u041f\u0440\u0435\u0434\u0442\u0435\u0447\u0438</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C_%D0%A0%D0%BE%D0%B6%D0%B4%D0%B5%D1%81%D1%82%D0%B2%D0%B0_%D0%98%D0%BE%D0%B0%D0%BD%D0%BD%D0%B0_%D0%9F%D1%80%D0%B5%D0%B4%D1%82%D0%B5%D1%87%D0%B8_%D1%83_%D0%92%D0%B0%D1%80%D0%B2%D0%B0%D1%80%D1%81%D0%BA%D0%B8%D1%85_%D0%B2%D0%BE%D1%80%D0%BE%D1%82' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Church_of_Nativity_of_John_the_Baptist_in_Varvarka.JPG/738px-Church_of_Nativity_of_John_the_Baptist_in_Varvarka.JPG'</div>`)[0];
+            popup_b6793c927e8948ad9588f78d6b7b81b6.setContent(html_25e8bfb2d3c14599a4ff6b3351129b08);
+        
+
+        marker_3aee2e01cbd74a25bd69e92c948b56a1.bindPopup(popup_b6793c927e8948ad9588f78d6b7b81b6)
+        ;
+
+        
+    
+    
+            var marker_7f1748bd573a4a079beef9628e2720ac = L.marker(
+                [55.755855, 37.619233],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_425cba0004c34f98853caee1ec8f920c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7f1748bd573a4a079beef9628e2720ac.setIcon(icon_425cba0004c34f98853caee1ec8f920c);
+        
+    
+        var popup_afbe525c15d341e1a11010d102888f0a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d684d876143544d3b442b584fbec60ca = $(`<div id="html_d684d876143544d3b442b584fbec60ca" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u041a\u0440\u0430\u0441\u043d\u044b\u0439\u0020\u043c\u043e\u043d\u0435\u0442\u043d\u044b\u0439\u0020\u0434\u0432\u043e\u0440</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D1%8B%D0%B9_%D0%BC%D0%BE%D0%BD%D0%B5%D1%82%D0%BD%D1%8B%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/%D0%9F%D0%B0%D0%BB%D0%B0%D1%82%D1%8B_%D1%81%D1%82%D0%B0%D1%80%D0%BE%D0%B3%D0%BE_%D0%BC%D0%BE%D0%BD%D0%B5%D1%82%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B4%D0%B2%D0%BE%D1%80%D0%B0.jpg/1200px-%D0%9F%D0%B0%D0%BB%D0%B0%D1%82%D1%8B_%D1%81%D1%82%D0%B0%D1%80%D0%BE%D0%B3%D0%BE_%D0%BC%D0%BE%D0%BD%D0%B5%D1%82%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B4%D0%B2%D0%BE%D1%80%D0%B0.jpg'</div>`)[0];
+            popup_afbe525c15d341e1a11010d102888f0a.setContent(html_d684d876143544d3b442b584fbec60ca);
+        
+
+        marker_7f1748bd573a4a079beef9628e2720ac.bindPopup(popup_afbe525c15d341e1a11010d102888f0a)
+        ;
+
+        
+    
+    
+            var marker_34a21ad2b0d64d95bb44c391af04f99a = L.marker(
+                [55.753774, 37.629231],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_4ff3f7afa03947118528b935cb664b80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_34a21ad2b0d64d95bb44c391af04f99a.setIcon(icon_4ff3f7afa03947118528b935cb664b80);
+        
+    
+        var popup_fc33ce07dabe4212a42fa8e615a4abba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55add5d126574bd4999aeb039af87058 = $(`<div id="html_55add5d126574bd4999aeb039af87058" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0426\u0435\u0440\u043a\u043e\u0432\u044c\u0020\u041d\u0438\u043a\u043e\u043b\u0430\u044f\u0020\u0427\u0443\u0434\u043e\u0442\u0432\u043e\u0440\u0446\u0430\u0020\u00ab\u041a\u0440\u0430\u0441\u043d\u044b\u0439\u0020\u0437\u0432\u043e\u043d\u00bb</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%8F_%D0%A7%D1%83%D0%B4%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D1%86%D0%B0_%C2%AB%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D1%8B%D0%B9_%D0%B7%D0%B2%D0%BE%D0%BD%C2%BB' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Church_of_Saint_Nicholas_Red_Jingle_10.jpg/671px-Church_of_Saint_Nicholas_Red_Jingle_10.jpg'</div>`)[0];
+            popup_fc33ce07dabe4212a42fa8e615a4abba.setContent(html_55add5d126574bd4999aeb039af87058);
+        
+
+        marker_34a21ad2b0d64d95bb44c391af04f99a.bindPopup(popup_fc33ce07dabe4212a42fa8e615a4abba)
+        ;
+
+        
+    
+    
+            var marker_2ad18fee8859461bbe27fc05808783f3 = L.marker(
+                [55.752769, 37.629246],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_4a9cb96b8a5c4e87a4eb401f4a0cec3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2ad18fee8859461bbe27fc05808783f3.setIcon(icon_4a9cb96b8a5c4e87a4eb401f4a0cec3e);
+        
+    
+        var popup_e0889d2bf1c5460ca7248ab55aa541c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e1b2f7a69cd428eb65040464e774cea = $(`<div id="html_6e1b2f7a69cd428eb65040464e774cea" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u041f\u0430\u043b\u0430\u0442\u044b\u0020\u0420\u043e\u043c\u0430\u043d\u043e\u0432\u044b\u0445</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BB%D0%B0%D1%82%D1%8B_%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD%D0%BE%D0%B2%D1%8B%D1%85' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Moscow_ZnamenskyMonRomanovChambers_D50.jpg/1200px-Moscow_ZnamenskyMonRomanovChambers_D50.jpg'</div>`)[0];
+            popup_e0889d2bf1c5460ca7248ab55aa541c8.setContent(html_6e1b2f7a69cd428eb65040464e774cea);
+        
+
+        marker_2ad18fee8859461bbe27fc05808783f3.bindPopup(popup_e0889d2bf1c5460ca7248ab55aa541c8)
+        ;
+
+        
+    
+    
+            var marker_d8d3fa2a2a924b38b735c8f4106d5cac = L.marker(
+                [55.755648, 37.628419],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_434154bcdaed437e9b7808620a0be0cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d8d3fa2a2a924b38b735c8f4106d5cac.setIcon(icon_434154bcdaed437e9b7808620a0be0cd);
+        
+    
+        var popup_9251107b74804fa09a86cf183bee041d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d86826b29bf426a8bb08f994735c6e7 = $(`<div id="html_9d86826b29bf426a8bb08f994735c6e7" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0414\u043e\u0445\u043e\u0434\u043d\u044b\u0439\u0020\u0434\u043e\u043c\u0020\u0418\u002e\u0413\u002e\u0020\u0425\u0440\u044f\u0449\u0435\u0432\u0430\u0020\u002d\u0020\u0412\u002e\u0418\u002e\u0020\u0412\u0430\u0440\u0433\u0438\u043d\u0430\u0020\u002d\u0020\u0421\u0435\u0440\u043f\u0443\u0445\u043e\u0432\u0441\u043a\u043e\u0433\u043e\u0020\u0433\u043e\u0440\u043e\u0434\u0441\u043a\u043e\u0433\u043e\u0020\u043e\u0431\u0449\u0435\u0441\u0442\u0432\u0430</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9_%D0%B4%D0%BE%D0%BC_%D0%98._%D0%93._%D0%A5%D1%80%D1%8F%D1%89%D0%B5%D0%B2%D0%B0_%E2%80%94_%D0%92._%D0%98._%D0%92%D0%B0%D1%80%D0%B3%D0%B8%D0%BD%D0%B0' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/%D0%98%D0%BB%D1%8C%D0%B8%D0%BD%D0%BA%D0%B0%2C_12-2-1.jpg/1200px-%D0%98%D0%BB%D1%8C%D0%B8%D0%BD%D0%BA%D0%B0%2C_12-2-1.jpg'</div>`)[0];
+            popup_9251107b74804fa09a86cf183bee041d.setContent(html_9d86826b29bf426a8bb08f994735c6e7);
+        
+
+        marker_d8d3fa2a2a924b38b735c8f4106d5cac.bindPopup(popup_9251107b74804fa09a86cf183bee041d)
+        ;
+
+        
+    
+    
+            var marker_2e05ffe73f464152973f9cade9311a56 = L.marker(
+                [55.752514, 37.623133],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_d10d091f01124d0c8cc420313f8b863f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2e05ffe73f464152973f9cade9311a56.setIcon(icon_d10d091f01124d0c8cc420313f8b863f);
+        
+    
+        var popup_cc9e679202c24f5a8fddc967e8c18171 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4212f3ea1e0c4f59a953967a32c2b657 = $(`<div id="html_4212f3ea1e0c4f59a953967a32c2b657" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0425\u0440\u0430\u043c\u0020\u0412\u0430\u0441\u0438\u043b\u0438\u044f\u0020\u0411\u043b\u0430\u0436\u0435\u043d\u043d\u043e\u0433\u043e</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D1%8F_%D0%91%D0%BB%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/%D0%A5%D1%80%D0%B0%D0%BC_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D1%8F_%D0%91%D0%BB%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%E2%84%962.JPG/1022px-%D0%A5%D1%80%D0%B0%D0%BC_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D1%8F_%D0%91%D0%BB%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%E2%84%962.JPG'</div>`)[0];
+            popup_cc9e679202c24f5a8fddc967e8c18171.setContent(html_4212f3ea1e0c4f59a953967a32c2b657);
+        
+
+        marker_2e05ffe73f464152973f9cade9311a56.bindPopup(popup_cc9e679202c24f5a8fddc967e8c18171)
+        ;
+
+        
+    
+    
+            var marker_d721f45967cf4071bb5f6bf05f313ff7 = L.marker(
+                [55.754033, 37.631406],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_b4c7d0423e8b499d858e813f16eba13e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d721f45967cf4071bb5f6bf05f313ff7.setIcon(icon_b4c7d0423e8b499d858e813f16eba13e);
+        
+    
+        var popup_c1ec0648d9de481fa5f441c2d8570fdd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a4f27c2ae2f424bb03643c49206e96f = $(`<div id="html_6a4f27c2ae2f424bb03643c49206e96f" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0426\u0435\u0440\u043a\u043e\u0432\u044c\u0020\u0422\u0440\u043e\u0438\u0446\u044b\u0020\u0432\u0020\u041d\u0438\u043a\u0438\u0442\u043d\u0438\u043a\u0430\u0445\u000a</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C_%D0%A2%D1%80%D0%BE%D0%B8%D1%86%D1%8B_%D0%B2_%D0%9D%D0%B8%D0%BA%D0%B8%D1%82%D0%BD%D0%B8%D0%BA%D0%B0%D1%85' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Holy_Trinity_Church_in_Nikitniki_03.jpg/1200px-Holy_Trinity_Church_in_Nikitniki_03.jpg'</div>`)[0];
+            popup_c1ec0648d9de481fa5f441c2d8570fdd.setContent(html_6a4f27c2ae2f424bb03643c49206e96f);
+        
+
+        marker_d721f45967cf4071bb5f6bf05f313ff7.bindPopup(popup_c1ec0648d9de481fa5f441c2d8570fdd)
+        ;
+
+        
+    
+    
+            var marker_52e75448dbe544639871db0fcc2588a4 = L.marker(
+                [55.754927, 37.625167],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_3b7a762d56b14fc3b7bfe62f3cf0ca21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_52e75448dbe544639871db0fcc2588a4.setIcon(icon_3b7a762d56b14fc3b7bfe62f3cf0ca21);
+        
+    
+        var popup_fa71c9dcb25a4a99975d7d297d4a5589 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1ba7d250b5145f3a5ed5ca6134d3148 = $(`<div id="html_a1ba7d250b5145f3a5ed5ca6134d3148" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0414\u043e\u0445\u043e\u0434\u043d\u044b\u0439\u0020\u0434\u043e\u043c\u0020\u0422\u0440\u043e\u0438\u0446\u043a\u043e\u0433\u043e\u0020\u043f\u043e\u0434\u0432\u043e\u0440\u044c\u044f\u0020\u043d\u0430\u0020\u0418\u043b\u044c\u0438\u043d\u043a\u0435</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9_%D0%B4%D0%BE%D0%BC_%D0%A2%D1%80%D0%BE%D0%B8%D1%86%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BF%D0%BE%D0%B4%D0%B2%D0%BE%D1%80%D1%8C%D1%8F_%D0%BD%D0%B0_%D0%98%D0%BB%D1%8C%D0%B8%D0%BD%D0%BA%D0%B5' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Moscow_Ilyinka5_D54.jpg/923px-Moscow_Ilyinka5_D54.jpg'</div>`)[0];
+            popup_fa71c9dcb25a4a99975d7d297d4a5589.setContent(html_a1ba7d250b5145f3a5ed5ca6134d3148);
+        
+
+        marker_52e75448dbe544639871db0fcc2588a4.bindPopup(popup_fa71c9dcb25a4a99975d7d297d4a5589)
+        ;
+
+        
+    
+    
+            var marker_d8eb08e20b184ef2830df3f79ac16ad3 = L.marker(
+                [55.757227, 37.623594],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_539a7e484d4948079332db3b51cff475 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d8eb08e20b184ef2830df3f79ac16ad3.setIcon(icon_539a7e484d4948079332db3b51cff475);
+        
+    
+        var popup_8933da6b27af4ec08b7103c269159346 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_587a7da2d4a841b2b4221a2bd0650afb = $(`<div id="html_587a7da2d4a841b2b4221a2bd0650afb" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0426\u0435\u0440\u043a\u043e\u0432\u044c\u0020\u0423\u0441\u043f\u0435\u043d\u0438\u044f\u0020\u041f\u0440\u0435\u0441\u0432\u044f\u0442\u043e\u0439\u0020\u0411\u043e\u0433\u043e\u0440\u043e\u0434\u0438\u0446\u044b</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%A3%D1%81%D0%BF%D0%B5%D0%BD%D0%B8%D1%8F_%D0%9F%D1%80%D0%B5%D1%81%D0%B2%D1%8F%D1%82%D0%BE%D0%B9_%D0%91%D0%BE%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B8%D1%86%D1%8B_%D0%BD%D0%B0_%D0%A7%D0%B8%D0%B6%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%BF%D0%BE%D0%B4%D0%B2%D0%BE%D1%80%D1%8C%D0%B5' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Moscow_ChurchChizhevskyMetochion_G25.jpg/798px-Moscow_ChurchChizhevskyMetochion_G25.jpg'</div>`)[0];
+            popup_8933da6b27af4ec08b7103c269159346.setContent(html_587a7da2d4a841b2b4221a2bd0650afb);
+        
+
+        marker_d8eb08e20b184ef2830df3f79ac16ad3.bindPopup(popup_8933da6b27af4ec08b7103c269159346)
+        ;
+
+        
+    
+    
+            var marker_a5993ca9481f4334a8adbfee26364f4a = L.marker(
+                [55.75234, 37.625902],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_a2075350af764e62aad93725c9d66357 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a5993ca9481f4334a8adbfee26364f4a.setIcon(icon_a2075350af764e62aad93725c9d66357);
+        
+    
+        var popup_190d33b98ce34529b05d58e8556222f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8988ffcbca9e4c7d863376dbc115c478 = $(`<div id="html_8988ffcbca9e4c7d863376dbc115c478" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0426\u0435\u0440\u043a\u043e\u0432\u044c\u0020\u0412\u0430\u0440\u0432\u0430\u0440\u044b\u0020\u0412\u0435\u043b\u0438\u043a\u043e\u043c\u0443\u0447\u0435\u043d\u0438\u0446\u044b\u0020\u043d\u0430\u0020\u0412\u0430\u0440\u0432\u0430\u0440\u043a\u0435</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%92%D0%B0%D1%80%D0%B2%D0%B0%D1%80%D1%8B_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%BC%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D1%86%D1%8B_%D0%BD%D0%B0_%D0%92%D0%B0%D1%80%D0%B2%D0%B0%D1%80%D0%BA%D0%B5' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Moscow%2C_Varvarka_2_%283%29.jpg/704px-Moscow%2C_Varvarka_2_%283%29.jpg'</div>`)[0];
+            popup_190d33b98ce34529b05d58e8556222f2.setContent(html_8988ffcbca9e4c7d863376dbc115c478);
+        
+
+        marker_a5993ca9481f4334a8adbfee26364f4a.bindPopup(popup_190d33b98ce34529b05d58e8556222f2)
+        ;
+
+        
+    
+    
+            var marker_46de94c5f6184d9485a269c4d9459476 = L.marker(
+                [55.755593, 37.618004],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_6bac024070ba48f38aa5d148f61b081f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_46de94c5f6184d9485a269c4d9459476.setIcon(icon_6bac024070ba48f38aa5d148f61b081f);
+        
+    
+        var popup_044d39b6838741c698d81546942ec29a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f12a213717c34efa951bffae79546a80 = $(`<div id="html_f12a213717c34efa951bffae79546a80" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0412\u043e\u0441\u043a\u0440\u0435\u0441\u0435\u043d\u0441\u043a\u0438\u0435\u0020\u0432\u043e\u0440\u043e\u0442\u0430</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D1%81%D0%BA%D1%80%D0%B5%D1%81%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B5_%D0%B2%D0%BE%D1%80%D0%BE%D1%82%D0%B0' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Moscow_July_2011-15a.jpg/573px-Moscow_July_2011-15a.jpg'</div>`)[0];
+            popup_044d39b6838741c698d81546942ec29a.setContent(html_f12a213717c34efa951bffae79546a80);
+        
+
+        marker_46de94c5f6184d9485a269c4d9459476.bindPopup(popup_044d39b6838741c698d81546942ec29a)
+        ;
+
+        
+    
+    
+            var marker_3ac382aa64444823b28f3d6afb7f6010 = L.marker(
+                [55.75247, 37.628643],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_6a3029bc91c3454d9a72af00084a729f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3ac382aa64444823b28f3d6afb7f6010.setIcon(icon_6a3029bc91c3454d9a72af00084a729f);
+        
+    
+        var popup_47345a9621214a9f8ae03b90b5de0958 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd29b92d13d9445b98919626e36cdbaf = $(`<div id="html_fd29b92d13d9445b98919626e36cdbaf" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0417\u043d\u0430\u043c\u0435\u043d\u0441\u043a\u0438\u0439\u0020\u0441\u043e\u0431\u043e\u0440</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%97%D0%BD%D0%B0%D0%BC%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80_(%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0)' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Moscow_ZnamenskyMonCathedral_1695.jpg/1049px-Moscow_ZnamenskyMonCathedral_1695.jpg'</div>`)[0];
+            popup_47345a9621214a9f8ae03b90b5de0958.setContent(html_fd29b92d13d9445b98919626e36cdbaf);
+        
+
+        marker_3ac382aa64444823b28f3d6afb7f6010.bindPopup(popup_47345a9621214a9f8ae03b90b5de0958)
+        ;
+
+        
+    
+    
+            var marker_e374858bc1174388af3f56507d26ea0c = L.marker(
+                [55.75524, 37.617978],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_309aab15916c4eb68b42c0f185334dbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "darkpurple", "prefix": "fa"}
+            );
+            marker_e374858bc1174388af3f56507d26ea0c.setIcon(icon_309aab15916c4eb68b42c0f185334dbd);
+        
+    
+        var popup_8a48594341e845009370ae246bb30b57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07cf99c3df234fd6b944f23bbed10bb2 = $(`<div id="html_07cf99c3df234fd6b944f23bbed10bb2" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u0413\u043e\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439\u0020\u0438\u0441\u0442\u043e\u0440\u0438\u0447\u0435\u0441\u043a\u0438\u0439\u0020\u043c\u0443\u0437\u0435\u0439</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/3/3c/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%282%29.jpg'</div>`)[0];
+            popup_8a48594341e845009370ae246bb30b57.setContent(html_07cf99c3df234fd6b944f23bbed10bb2);
+        
+
+        marker_e374858bc1174388af3f56507d26ea0c.bindPopup(popup_8a48594341e845009370ae246bb30b57)
+        ;
+
+        
+    
+    
+            var marker_06b297d1b48348cba399461f9d07fec0 = L.marker(
+                [55.756363, 37.618516],
+                {}
+            ).addTo(feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f);
+        
+    
+            var icon_23de61f15fc14f67802e86aea3a9a69c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "darkpurple", "prefix": "fa"}
+            );
+            marker_06b297d1b48348cba399461f9d07fec0.setIcon(icon_23de61f15fc14f67802e86aea3a9a69c);
+        
+    
+        var popup_963d8d62963348878a4795d1d7c456da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42c6d7fff35a406da8ae34e3835dfd0d = $(`<div id="html_42c6d7fff35a406da8ae34e3835dfd0d" style="width: 100.0%; height: 100.0%;"><h3 style='text-align:center;'>\u041c\u0443\u0437\u0435\u0439\u0020\u041e\u0442\u0435\u0447\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0439\u0020\u0432\u043e\u0439\u043d\u044b\u0020\u0031\u0038\u0031\u0032\u0020\u0433\u043e\u0434\u0430</h3><p style='text-align:center;'><a href='https://ru.wikipedia.org/wiki/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%9E%D1%82%D0%B5%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9_%D0%B2%D0%BE%D0%B9%D0%BD%D1%8B_1812_%D0%B3%D0%BE%D0%B4%D0%B0' target='_blank'>~ Wiki ~</a></p><img style='border-radius:0.3rem;max-width:40vw;' src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Former_Lenin_museum_%28Moscow%29_by_shakko_01.jpg/1200px-Former_Lenin_museum_%28Moscow%29_by_shakko_01.jpg'</div>`)[0];
+            popup_963d8d62963348878a4795d1d7c456da.setContent(html_42c6d7fff35a406da8ae34e3835dfd0d);
+        
+
+        marker_06b297d1b48348cba399461f9d07fec0.bindPopup(popup_963d8d62963348878a4795d1d7c456da)
+        ;
+
+        
+    
+    
+            var feature_group_sub_group_5da12e2c3dee43178de0d81fa401b273 = L.featureGroup.subGroup(
+                feature_group_07c6f873e9ba4355a1c867fe63504554
+            );
+            feature_group_sub_group_5da12e2c3dee43178de0d81fa401b273.addTo(map_c38564e769a444bfaef8a55bd260e6ab);
+        
+    
+            var marker_b4a4191a9bc449d9bd3a47b68c616be8 = L.marker(
+                [55.751249, 37.628724],
+                {}
+            ).addTo(feature_group_sub_group_5da12e2c3dee43178de0d81fa401b273);
+        
+    
+            var icon_575c224706a443b9adbbadffb2d55782 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b4a4191a9bc449d9bd3a47b68c616be8.setIcon(icon_575c224706a443b9adbbadffb2d55782);
+        
+    
+        var popup_dd1f264f5c01401dbeb591a50fbff590 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f41466feed734b7092866761dbf04e3f = $(`<div id="html_f41466feed734b7092866761dbf04e3f" style="width: 100.0%; height: 100.0%;"><h3>\u041f\u0430\u0440\u043a\u0020\u0417\u0430\u0440\u044f\u0434\u044c\u0435</h3><img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Zaryadye31.jpg"></div>`)[0];
+            popup_dd1f264f5c01401dbeb591a50fbff590.setContent(html_f41466feed734b7092866761dbf04e3f);
+        
+
+        marker_b4a4191a9bc449d9bd3a47b68c616be8.bindPopup(popup_dd1f264f5c01401dbeb591a50fbff590)
+        ;
+
+        
+    
+    
+            var feature_group_sub_group_99a740a6fac54411ac5b28567845f813 = L.featureGroup.subGroup(
+                feature_group_07c6f873e9ba4355a1c867fe63504554
+            );
+            feature_group_sub_group_99a740a6fac54411ac5b28567845f813.addTo(map_c38564e769a444bfaef8a55bd260e6ab);
+        
+    
+            var marker_535cf931f89f45739578bf286034a45a = L.marker(
+                [55.75476, 37.617485],
+                {}
+            ).addTo(feature_group_sub_group_99a740a6fac54411ac5b28567845f813);
+        
+    
+            var icon_a806b56b4c9e4f10ae2374243390611a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_535cf931f89f45739578bf286034a45a.setIcon(icon_a806b56b4c9e4f10ae2374243390611a);
+        
+    
+        var popup_aa558aa121ec4bc0a4f5f10122a42afc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f95f29bf8cbf45479635025917c38106 = $(`<div id="html_f95f29bf8cbf45479635025917c38106" style="width: 100.0%; height: 100.0%;"><h3>WC 1</h3></div>`)[0];
+            popup_aa558aa121ec4bc0a4f5f10122a42afc.setContent(html_f95f29bf8cbf45479635025917c38106);
+        
+
+        marker_535cf931f89f45739578bf286034a45a.bindPopup(popup_aa558aa121ec4bc0a4f5f10122a42afc)
+        ;
+
+        
+    
+    
+            var marker_dddbc62e46f942b38fa2a08503bff41b = L.marker(
+                [55.752468, 37.621619],
+                {}
+            ).addTo(feature_group_sub_group_99a740a6fac54411ac5b28567845f813);
+        
+    
+            var icon_92171961e78348ef8938a485b68dea69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_dddbc62e46f942b38fa2a08503bff41b.setIcon(icon_92171961e78348ef8938a485b68dea69);
+        
+    
+        var popup_1a11c2e196594b82b14c5a2148920da4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e200f6f9fba4b799aa56567054d1496 = $(`<div id="html_4e200f6f9fba4b799aa56567054d1496" style="width: 100.0%; height: 100.0%;"><h3>WC 2</h3></div>`)[0];
+            popup_1a11c2e196594b82b14c5a2148920da4.setContent(html_4e200f6f9fba4b799aa56567054d1496);
+        
+
+        marker_dddbc62e46f942b38fa2a08503bff41b.bindPopup(popup_1a11c2e196594b82b14c5a2148920da4)
+        ;
+
+        
+    
+    
+            var marker_ece0b60e3f224c25a423558cedf17c0a = L.marker(
+                [55.750825, 37.626264],
+                {}
+            ).addTo(feature_group_sub_group_99a740a6fac54411ac5b28567845f813);
+        
+    
+            var icon_1067bbac78fb483087feebd199c52a4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_ece0b60e3f224c25a423558cedf17c0a.setIcon(icon_1067bbac78fb483087feebd199c52a4c);
+        
+    
+        var popup_fb17c3cee004464ab2c93940e7148789 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_321caea7dffa46fa855f330a72e5b47b = $(`<div id="html_321caea7dffa46fa855f330a72e5b47b" style="width: 100.0%; height: 100.0%;"><h3>WC 3</h3></div>`)[0];
+            popup_fb17c3cee004464ab2c93940e7148789.setContent(html_321caea7dffa46fa855f330a72e5b47b);
+        
+
+        marker_ece0b60e3f224c25a423558cedf17c0a.bindPopup(popup_fb17c3cee004464ab2c93940e7148789)
+        ;
+
+        
+    
+    
+            var marker_504f4b7604ed4429ab92dbcf2b537660 = L.marker(
+                [55.750346, 37.62995],
+                {}
+            ).addTo(feature_group_sub_group_99a740a6fac54411ac5b28567845f813);
+        
+    
+            var icon_05fd020a6fed4d04b2eaf1a096dd9c75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_504f4b7604ed4429ab92dbcf2b537660.setIcon(icon_05fd020a6fed4d04b2eaf1a096dd9c75);
+        
+    
+        var popup_2d09d33ad1644b839080b64c844ec4dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f19b42aa7df2450bac05b2c0bda7987a = $(`<div id="html_f19b42aa7df2450bac05b2c0bda7987a" style="width: 100.0%; height: 100.0%;"><h3>WC 4</h3></div>`)[0];
+            popup_2d09d33ad1644b839080b64c844ec4dd.setContent(html_f19b42aa7df2450bac05b2c0bda7987a);
+        
+
+        marker_504f4b7604ed4429ab92dbcf2b537660.bindPopup(popup_2d09d33ad1644b839080b64c844ec4dd)
+        ;
+
+        
+    
+    
+            var layer_control_4afa3b909f5441e986d9137234b82b93 = {
+                base_layers : {
+                    "stamentoner" : tile_layer_c1d807f8b72e4009a30d66737c698299,
+                },
+                overlays :  {
+                    "Kitay-gorod" : geo_json_bd5997840d5548539fc958fac568adf1,
+                    "Park Z" : geo_json_8f60ab2201d2431bb4082bbf0814fc92,
+                    "\u0418\u043d\u0442\u0435\u0440\u0435\u0441\u043d\u044b\u0435 \u043c\u0435\u0441\u0442\u0430" : feature_group_sub_group_48c46b519b0f473aa2b03e608024db8f,
+                    "g2" : feature_group_sub_group_5da12e2c3dee43178de0d81fa401b273,
+                    "WC" : feature_group_sub_group_99a740a6fac54411ac5b28567845f813,
+                },
+            };
+            L.control.layers(
+                layer_control_4afa3b909f5441e986d9137234b82b93.base_layers,
+                layer_control_4afa3b909f5441e986d9137234b82b93.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_c38564e769a444bfaef8a55bd260e6ab);
+        
+</script>

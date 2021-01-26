@@ -1,0 +1,10 @@
+{
+  "name_id": "monument_to_krupskaya",
+  "loc": [55.766620, 37.632295],
+  "name_code": "\\u041f\\u0430\\u043c\\u044f\\u0442\\u043d\\u0438\\u043a\\u0020\\u041d\\u002e\\u041a\\u002e\\u0020\\u041a\\u0440\\u0443\\u043f\\u0441\\u043a\\u0430\\u044f",
+  "img_url": "https://avatars.mds.yandex.net/get-altay/2369616/2a00000171378822248f791a4b41747f8223/XXXL",
+  "wiki_link": "None",
+  "marker_color": "darkpurple",
+  "marker_icon": "star",
+  "marker_icon_prefix": "fa"
+}

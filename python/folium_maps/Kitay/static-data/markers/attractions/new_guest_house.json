@@ -1,0 +1,10 @@
+{
+  "name_id": "new_guest_house",
+  "loc": [55.753602, 37.627507],
+  "name_code": "\\u041d\\u043e\\u0432\\u044b\\u0439\\u0020\\u0413\\u043e\\u0441\\u0442\\u0438\\u043d\\u044b\\u0439\\u0020\\u0434\\u0432\\u043e\\u0440",
+  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9_%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D1%8B%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80%2C_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0_04.jpg/1200px-%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9_%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D1%8B%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80%2C_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0_04.jpg",
+  "wiki_link": "https://ru.wikipedia.org/wiki/%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9_%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D1%8B%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80",
+  "marker_color": false,
+  "marker_icon": "star",
+  "marker_icon_prefix": false
+}

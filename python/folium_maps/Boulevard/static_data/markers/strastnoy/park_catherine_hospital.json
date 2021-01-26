@@ -1,0 +1,10 @@
+{
+  "name_id": "park_catherine_hospital",
+  "loc": [55.769263, 37.611456],
+  "name_code": "\\u041f\\u0430\\u0440\\u043a\\u0020\\u00ab\\u0415\\u043a\\u0430\\u0442\\u0435\\u0440\\u0438\\u043d\\u0438\\u043d\\u0441\\u043a\\u0430\\u044f\\u0020\\u0431\\u043e\\u043b\\u044c\\u043d\\u0438\\u0446\\u0430\\u00bb",
+  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/%D0%9F%D0%B0%D1%80%D0%BA_%D0%9C%D0%BE%D1%81%D0%B3%D0%BE%D1%80%D0%B4%D1%83%D0%BC%D1%8B%2C_%D1%83%D1%81%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0_%D0%93%D0%B0%D0%B3%D0%B0%D1%80%D0%B8%D0%BD%D1%8B%D1%85.jpg/560px-%D0%9F%D0%B0%D1%80%D0%BA_%D0%9C%D0%BE%D1%81%D0%B3%D0%BE%D1%80%D0%B4%D1%83%D0%BC%D1%8B%2C_%D1%83%D1%81%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0_%D0%93%D0%B0%D0%B3%D0%B0%D1%80%D0%B8%D0%BD%D1%8B%D1%85.jpg",
+  "wiki_link": "https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%BA_%C2%AB%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%B0%C2%BB",
+  "marker_color": "orange",
+  "marker_icon": "tree",
+  "marker_icon_prefix": "fa"
+}
