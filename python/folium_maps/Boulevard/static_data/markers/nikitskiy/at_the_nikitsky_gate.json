@@ -1,0 +1,10 @@
+{
+  "name_id": "at_the_nikitsky_gate",
+  "loc": [55.756908, 37.599399],
+  "name_code": "\\u0423\\u0020\\u041d\\u0438\\u043a\\u0438\\u0442\\u0441\\u043a\\u0438\\u0445\\u0020\\u0432\\u043e\\u0440\\u043e\\u0442",
+  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Teatr_u_Nikitskikh_vorot.JPG/548px-Teatr_u_Nikitskikh_vorot.JPG",
+  "wiki_link": "https://ru.wikipedia.org/wiki/%D0%A3_%D0%9D%D0%B8%D0%BA%D0%B8%D1%82%D1%81%D0%BA%D0%B8%D1%85_%D0%B2%D0%BE%D1%80%D0%BE%D1%82",
+  "marker_color": "green",
+  "marker_icon": "home",
+  "marker_icon_prefix": "fa"
+}

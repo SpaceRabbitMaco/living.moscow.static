@@ -1,0 +1,10 @@
+{
+  "name_id": "the_17th_century_red_chambers",
+  "loc": [55.743833, 37.601026],
+  "name_code": "\\u041a\\u0440\\u0430\\u0441\\u043d\\u044b\\u0435\\u0020\\u043f\\u0430\\u043b\\u0430\\u0442\\u044b\\u0020\\u0058\\u0056\\u0049\\u0049\\u0020\\u0432\\u0435\\u043a\\u0430",
+  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Wiki_ostozhenka_chambers.jpg/580px-Wiki_ostozhenka_chambers.jpg",
+  "wiki_link": "https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D1%8B%D0%B5_%D0%BF%D0%B0%D0%BB%D0%B0%D1%82%D1%8B_XVII_%D0%B2%D0%B5%D0%BA%D0%B0",
+  "marker_color": "blue",
+  "marker_icon": "star",
+  "marker_icon_prefix": "fa"
+}

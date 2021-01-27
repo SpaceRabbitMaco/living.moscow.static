@@ -1,0 +1,10 @@
+{
+  "name_id": "musical_theater",
+  "loc": [55.766186, 37.607500],
+  "name_code": "\\u0422\\u0435\\u0430\\u0442\\u0440\\u0020\\u043c\\u044e\\u0437\\u0438\\u043a\\u043b\\u0430",
+  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/%D0%A2%D0%B5%D0%B0%D1%82%D1%80_%D0%BC%D1%8E%D0%B7%D0%B8%D0%BA%D0%BB%D0%B0_%D0%B2_%D0%BA%D0%B8%D0%BD%D0%BE%D1%82%D0%B5%D0%B0%D1%82%D1%80%D0%B5_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F.jpg/548px-%D0%A2%D0%B5%D0%B0%D1%82%D1%80_%D0%BC%D1%8E%D0%B7%D0%B8%D0%BA%D0%BB%D0%B0_%D0%B2_%D0%BA%D0%B8%D0%BD%D0%BE%D1%82%D0%B5%D0%B0%D1%82%D1%80%D0%B5_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F.jpg",
+  "wiki_link": "https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%B0%D1%82%D1%80_%D0%BC%D1%8E%D0%B7%D0%B8%D0%BA%D0%BB%D0%B0",
+  "marker_color": "orange",
+  "marker_icon": "home",
+  "marker_icon_prefix": "fa"
+}
