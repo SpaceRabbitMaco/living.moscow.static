@@ -44,7 +44,7 @@ def load_areas(dir_name):
     return result
 
 
-def add_areas(areas, names, styles, m):
+def add_areas_to_map(areas, names, styles, m):
     """ Add areas to map
 
         Keyword arguments:
