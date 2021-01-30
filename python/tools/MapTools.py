@@ -6,16 +6,16 @@ import json
 import folium
 
 
-def load_markers(dirName):
-    """ Load markers from a Dir, then returns Dict 
+def load_markers(dir_name):
+    """ Load markers from a dir, then returns dict 
 
         Keyword arguments:
-            dirName -- (string) relative path to directory with marker files
+            dir_name -- (string) relative path to directory with marker files
                 ** path = f"./{dirName}/"
     """
 
     result = {}
-    path = f"./{dirName}/"
+    path = f"./{dir_name}/"
 
     onlyfiles = [f for f in listdir(path) if isfile(join(path, f))]
     for f_name in onlyfiles:
@@ -25,16 +25,16 @@ def load_markers(dirName):
     return result
 
 
-def load_areas(dirName):
-    """ Load geoJSON data from a Dir, then returns List
+def load_areas(dir_name):
+    """ Load geoJSON data from a dir, then returns list
 
         Keyword arguments:
-            dirName -- (string) relative path to directory with geoJSON files
-                ** path = f"./{dirName}/"
+            dir_name -- (string) relative path to directory with geoJSON files
+                ** path = f"./{dir_name}/"
     """
 
     result = []
-    path = f"./{dirName}/"
+    path = f"./{dir_name}/"
 
     onlyfiles = [f for f in listdir(path) if isfile(join(path, f))]
     for f_name in onlyfiles:
