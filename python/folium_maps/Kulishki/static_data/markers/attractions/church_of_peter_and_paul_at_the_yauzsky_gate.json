@@ -1,0 +1,10 @@
+{
+  "name_id": "church_of_peter_and_paul_at_the_yauzsky_gate",
+  "loc": [55.751307, 37.643281],
+  "name_code": "\\u0425\\u0440\\u0430\\u043c\\u0020\\u0421\\u0432\\u044f\\u0442\\u044b\\u0445\\u0020\\u0410\\u043f\\u043e\\u0441\\u0442\\u043e\\u043b\\u043e\\u0432\\u0020\\u041f\\u0435\\u0442\\u0440\\u0430\\u0020\\u0438\\u0020\\u041f\\u0430\\u0432\\u043b\\u0430\\u0020\\u0443\\u0020\\u042f\\u0443\\u0437\\u0441\\u043a\\u0438\\u0445\\u0020\\u0432\\u043e\\u0440\\u043e\\u0442",
+  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Petropavlovsky_6_05.jpg/523px-Petropavlovsky_6_05.jpg",
+  "wiki_link": "https://ru.wikipedia.org/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%A1%D0%B2%D1%8F%D1%82%D1%8B%D1%85_%D0%90%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D0%BB%D0%BE%D0%B2_%D0%9F%D0%B5%D1%82%D1%80%D0%B0_%D0%B8_%D0%9F%D0%B0%D0%B2%D0%BB%D0%B0_%D1%83_%D0%AF%D1%83%D0%B7%D1%81%D0%BA%D0%B8%D1%85_%D0%B2%D0%BE%D1%80%D0%BE%D1%82",
+  "marker_color": "darkblue",
+  "marker_icon": "star",
+  "marker_icon_prefix": "fa"
+}

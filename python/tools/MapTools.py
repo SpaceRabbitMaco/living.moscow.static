@@ -61,7 +61,7 @@ def add_areas_to_map(areas, names, styles, m):
         folium.GeoJson(
             areas[i],
             name=names[i],
-            style_function=lambda x: styles[i]
+            style_function=lambda x: styles[i],
         ).add_to(m)
 
 
