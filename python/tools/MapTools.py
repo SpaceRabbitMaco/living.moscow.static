@@ -11,11 +11,11 @@ def load_markers(dir_name):
 
         Keyword arguments:
             dir_name -- (string) relative path to directory with marker files
-                ** path = f"./{dirName}/"
+                ** path = f"{dirName}"
     """
 
     result = {}
-    path = f"./{dir_name}/"
+    path = f"{dir_name}"
 
     onlyfiles = [f for f in listdir(path) if isfile(join(path, f))]
     for f_name in onlyfiles:
@@ -30,11 +30,11 @@ def load_areas(dir_name):
 
         Keyword arguments:
             dir_name -- (string) relative path to directory with geoJSON files
-                ** path = f"./{dir_name}/"
+                ** path = f"{dir_name}"
     """
 
     result = []
-    path = f"./{dir_name}/"
+    path = f"{dir_name}"
 
     onlyfiles = [f for f in listdir(path) if isfile(join(path, f))]
     for f_name in onlyfiles:
@@ -56,13 +56,15 @@ def add_areas_to_map(areas, names, styles, m):
                 ** opacity: float number
             m -- (obj) folium map object
     """
+    def add_area_to_map(a, n, s, m):
+        folium.GeoJson(
+            a,
+            name=n,
+            style_function=lambda x: s,
+        ).add_to(m)
 
     for i in range(len(areas)):
-        folium.GeoJson(
-            areas[i],
-            name=names[i],
-            style_function=lambda x: styles[i],
-        ).add_to(m)
+        add_area_to_map(areas[i], names[i], styles[i], m)
 
 
 def add_markers_to_map(markers_dict, group, shop=False):
