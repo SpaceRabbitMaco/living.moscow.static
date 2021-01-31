@@ -1,10 +1,1 @@
-{
-  "name_id": "house_iron",
-  "loc": [55.752292, 37.642889],
-  "name_code": "\\u0414\\u043e\\u043c\\u002d\\u0443\\u0442\\u044e\\u0433",
-  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/%D0%94%D0%BE%D0%BC_%D0%A3%D1%82%D1%8E%D0%B3.jpg/440px-%D0%94%D0%BE%D0%BC_%D0%A3%D1%82%D1%8E%D0%B3.jpg",
-  "wiki_link": "None",
-  "marker_color": "darkblue",
-  "marker_icon": "star",
-  "marker_icon_prefix": "fa"
-}
+{"name_id": "house_iron", "loc": [55.752292, 37.642889], "name_code": "\\u0414\\u043e\\u043c\\u002d\\u0443\\u0442\\u044e\\u0433", "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/%D0%94%D0%BE%D0%BC_%D0%A3%D1%82%D1%8E%D0%B3.jpg/440px-%D0%94%D0%BE%D0%BC_%D0%A3%D1%82%D1%8E%D0%B3.jpg", "wiki_link": "None", "marker_color": "darkblue", "marker_icon": "star", "marker_icon_prefix": "fa", "site_link": "", "text": ""}

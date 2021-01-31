@@ -107,7 +107,7 @@ def add_markers_to_map(markers_dict, group):
         el = markers_dict[item]
 
         wiki = f"<p style='text-align:center;'><a href='{el['wiki_link']}' target='_blank'>~ WIKI ~</a></p>" if (
-            el['wiki_link'] != '') else ''
+            el['wiki_link'] != '' and el['wiki_link'] != 'None') else ''
 
         www = f"<p style='text-align:center;'><a href='{el['site_link']}' target='_blank'>~ WWW ~</a></p>" if (
             el['site_link'] != '') else ''

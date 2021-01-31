@@ -1,9 +1,12 @@
 {
 	"name_id": "crave_theatre_moscow",
-	"loc": [55.756428, 37.633603],
+	"loc": [
+		55.756428,
+		37.633603
+	],
 	"name_code": "Crave Theatre Moscow",
 	"img_url": "https://avatars.mds.yandex.net/get-altay/2134557/2a0000016e6c9ca7aa9fe002dfa1e1060d67/XXXL",
-	"wiki_link": "None",
+	"wiki_link": "",
 	"site_link": "https://crave.ru/",
 	"text": "",
 	"marker_color": "darkpurple",

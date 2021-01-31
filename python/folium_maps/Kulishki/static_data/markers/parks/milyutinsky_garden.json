@@ -1,10 +1,1 @@
-{
-  "name_id": "milyutinsky_garden",
-  "loc": [55.756254, 37.646947],
-  "name_code": "\\u041c\\u0438\\u043b\\u044e\\u0442\\u0438\\u043d\\u0441\\u043a\\u0438\\u0439\\u0020\\u0441\\u0430\\u0434",
-  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Milyutinsky_Garden_01.jpg/560px-Milyutinsky_Garden_01.jpg",
-  "wiki_link": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BB%D1%8E%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D0%B0%D0%B4",
-  "marker_color": "green",
-  "marker_icon": "tree",
-  "marker_icon_prefix": "fa"
-}
+{"name_id": "milyutinsky_garden", "loc": [55.756254, 37.646947], "name_code": "\\u041c\\u0438\\u043b\\u044e\\u0442\\u0438\\u043d\\u0441\\u043a\\u0438\\u0439\\u0020\\u0441\\u0430\\u0434", "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Milyutinsky_Garden_01.jpg/560px-Milyutinsky_Garden_01.jpg", "wiki_link": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BB%D1%8E%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D0%B0%D0%B4", "marker_color": "green", "marker_icon": "tree", "marker_icon_prefix": "fa", "site_link": "", "text": ""}
