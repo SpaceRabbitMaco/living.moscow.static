@@ -2,8 +2,26 @@ import os
 from os import listdir
 from os.path import isfile, join
 import json
+from pprint import pprint as pp
 
 import folium
+
+
+def fix_markers(dir_name):
+    onlyfiles = [f for f in listdir(
+        dir_name) if isfile(join(dir_name, f))]
+
+    allAttrs = ['name_id', 'loc', 'name_code', 'img_url', 'wiki_link',
+                'site_link', 'text', 'marker_color', 'marker_icon', 'marker_icon_prefix']
+
+    for f_name in onlyfiles:
+        with open(f"{dir_name}{f_name}") as json_file:
+            data = json.load(json_file)
+        for attr in allAttrs:
+            if (attr not in data.keys()):
+                data[attr] = ''
+        with open(f"{dir_name}{f_name}", "w") as jsonFile:
+            json.dump(data, jsonFile)
 
 
 def load_markers(dir_name):
@@ -67,7 +85,7 @@ def add_areas_to_map(areas, names, styles, m):
         add_area_to_map(areas[i], names[i], styles[i], m)
 
 
-def add_markers_to_map(markers_dict, group, shop=False):
+def add_markers_to_map(markers_dict, group):
     """ Add markers to map
 
         Keyword arguments:
@@ -83,47 +101,28 @@ def add_markers_to_map(markers_dict, group, shop=False):
                 ** marker_icon: string (check folium allowed marker icons)
                 ** marker_icon_prefix: string (check folium allowed marker icon prefixes)
             group -- folium subgroup object
-            shop -- (bool) flag, workaround solution
     """
-
-    h3_s = "<h3 style='text-align:center;'>"
-    h3_e = "</h3>"
-    pa_s = "<p style='text-align:center;'><a href='"
-    pa_e = "' target='_blank'>~ Wiki ~</a></p>"
-    pa_e_alt = "' target='_blank'>~ WWW ~</a></p>"
-    img_s = "<img style='border-radius:0.3rem;max-width:35vw;' src='"
-    p_shop_s = "<p style='text-align:center;font-size:larger;'>"
-    p_shop_e = "</p>"
 
     for item in markers_dict.keys():
         el = markers_dict[item]
-        if (el['marker_color'] == False) or (el['marker_icon_prefix'] == False):
-            marker = folium.Marker(
-                location=el['loc'],
-                popup=f"{h3_s}{el['name_code']}{h3_e}{pa_s}{el['wiki_link']}{pa_e}{img_s}{el['img_url']}'",
-                icon=folium.Icon(icon=el['marker_icon']),
-            )
-        else:
-            marker = folium.Marker(
-                location=el['loc'],
-                popup=f"{h3_s}{el['name_code']}{h3_e}{pa_s}{el['wiki_link']}{pa_e}{img_s}{el['img_url']}'",
-                icon=folium.Icon(
-                    color=el['marker_color'], icon=el['marker_icon'], prefix=el['marker_icon_prefix']),
-            )
+        keys = el.keys()
 
-        if (el['wiki_link'] == 'None'):
-            marker = folium.Marker(
-                location=el['loc'],
-                popup=f"{h3_s}{el['name_code']}{h3_e}{img_s}{el['img_url']}'",
-                icon=folium.Icon(
-                    color=el['marker_color'], icon=el['marker_icon'], prefix=el['marker_icon_prefix']),
-            )
-        if (shop):
-            marker = folium.Marker(
-                location=el['loc'],
-                popup=f"{h3_s}{el['name_code']}{h3_e}{p_shop_s}{el['text']}{p_shop_e}{pa_s}{el['site_link']}{pa_e_alt}{img_s}{el['img_url']}'",
-                icon=folium.Icon(
-                    color=el['marker_color'], icon=el['marker_icon'], prefix=el['marker_icon_prefix']),
-            )
+        wiki = f"<p style='text-align:center;'><a href='{el['wiki_link']}' target='_blank'>~ WIKI ~</a></p>" if (
+            el['wiki_link'] != '') else ''
+
+        www = f"<p style='text-align:center;'><a href='{el['site_link']}' target='_blank'>~ WWW ~</a></p>" if (
+            el['site_link'] != '') else ''
+
+        text = f"<p style='text-align:center;font-size:larger;'>{el['text']}</p>" if (
+            el['site_link'] != '') else ''
+
+        template = f"<h3 style='text-align:center;'>{el['name_code']}</h3>{text}{wiki}{www}<p style='text-align:center;'><img style='border-radius:0.3rem;max-width:35vw;' src='{el['img_url']}'>"
+
+        marker = folium.Marker(
+            location=el['loc'],
+            popup=template,
+            icon=folium.Icon(
+                color=el['marker_color'], icon=el['marker_icon'], prefix=el['marker_icon_prefix'])
+        )
 
         group.add_child(marker)
