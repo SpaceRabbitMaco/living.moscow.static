@@ -105,7 +105,6 @@ def add_markers_to_map(markers_dict, group):
 
     for item in markers_dict.keys():
         el = markers_dict[item]
-        keys = el.keys()
 
         wiki = f"<p style='text-align:center;'><a href='{el['wiki_link']}' target='_blank'>~ WIKI ~</a></p>" if (
             el['wiki_link'] != '') else ''
