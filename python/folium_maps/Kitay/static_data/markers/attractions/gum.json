@@ -1,10 +1,1 @@
-{
-  "name_id": "gum",
-  "loc": [55.754559, 37.621315],
-  "name_code": "\\u0413\\u0423\\u041c",
-  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/GUM%2C_Moscow%2C_Russia.jpg/1200px-GUM%2C_Moscow%2C_Russia.jpg",
-  "wiki_link": "https://ru.wikipedia.org/wiki/%D0%93%D0%A3%D0%9C",
-  "marker_color": "darkblue",
-  "marker_icon": "star",
-  "marker_icon_prefix": "fa"
-}
+{"name_id": "gum", "loc": [55.754559, 37.621315], "name_code": "\\u0413\\u0423\\u041c", "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/GUM%2C_Moscow%2C_Russia.jpg/1200px-GUM%2C_Moscow%2C_Russia.jpg", "wiki_link": "https://ru.wikipedia.org/wiki/%D0%93%D0%A3%D0%9C", "marker_color": "darkblue", "marker_icon": "star", "marker_icon_prefix": "fa", "site_link": "", "text": ""}

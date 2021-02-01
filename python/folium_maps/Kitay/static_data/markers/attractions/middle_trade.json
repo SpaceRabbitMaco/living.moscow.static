@@ -1,10 +1,1 @@
-{
-  "name_id": "middle_trade",
-  "loc": [55.753133, 37.623429],
-  "name_code": "\\u0421\\u0440\\u0435\\u0434\\u043d\\u0438\\u0435\\u0020\\u0442\\u043e\\u0440\\u0433\\u043e\\u0432\\u044b\\u0435\\u0020\\u0440\\u044f\\u0434\\u044b",
-  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Middle_Trade_Rows_Moscow_06-2015.jpg/1125px-Middle_Trade_Rows_Moscow_06-2015.jpg",
-  "wiki_link": "https://ru.wikipedia.org/wiki/%D0%A1%D1%80%D0%B5%D0%B4%D0%BD%D0%B8%D0%B5_%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D1%8B%D0%B5_%D1%80%D1%8F%D0%B4%D1%8B",
-  "marker_color": "darkblue",
-  "marker_icon": "star",
-  "marker_icon_prefix": "fa"
-}
+{"name_id": "middle_trade", "loc": [55.753133, 37.623429], "name_code": "\\u0421\\u0440\\u0435\\u0434\\u043d\\u0438\\u0435\\u0020\\u0442\\u043e\\u0440\\u0433\\u043e\\u0432\\u044b\\u0435\\u0020\\u0440\\u044f\\u0434\\u044b", "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Middle_Trade_Rows_Moscow_06-2015.jpg/1125px-Middle_Trade_Rows_Moscow_06-2015.jpg", "wiki_link": "https://ru.wikipedia.org/wiki/%D0%A1%D1%80%D0%B5%D0%B4%D0%BD%D0%B8%D0%B5_%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D1%8B%D0%B5_%D1%80%D1%8F%D0%B4%D1%8B", "marker_color": "darkblue", "marker_icon": "star", "marker_icon_prefix": "fa", "site_link": "", "text": ""}
