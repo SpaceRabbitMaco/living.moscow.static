@@ -1,10 +1,1 @@
-{
-  "name_id": "theater_of_nations",
-  "loc": [55.765983, 37.612733],
-  "name_code": "\\u0422\\u0435\\u0430\\u0442\\u0440\\u0020\\u043d\\u0430\\u0446\\u0438\\u0439",
-  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Korsh_Theatre_2015-09-28.jpg/548px-Korsh_Theatre_2015-09-28.jpg",
-  "wiki_link": "https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%B0%D1%82%D1%80_%D0%BD%D0%B0%D1%86%D0%B8%D0%B9",
-  "marker_color": "orange",
-  "marker_icon": "home",
-  "marker_icon_prefix": "fa"
-}
+{"name_id": "theater_of_nations", "loc": [55.765983, 37.612733], "name_code": "\\u0422\\u0435\\u0430\\u0442\\u0440\\u0020\\u043d\\u0430\\u0446\\u0438\\u0439", "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Korsh_Theatre_2015-09-28.jpg/548px-Korsh_Theatre_2015-09-28.jpg", "wiki_link": "https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%B0%D1%82%D1%80_%D0%BD%D0%B0%D1%86%D0%B8%D0%B9", "marker_color": "orange", "marker_icon": "home", "marker_icon_prefix": "fa", "site_link": "https://theatreofnations.ru/events?hall=1", "text": ""}

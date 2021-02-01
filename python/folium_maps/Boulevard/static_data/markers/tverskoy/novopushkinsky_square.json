@@ -1,10 +1,1 @@
-{
-  "name_id": "novopushkinsky_square",
-  "loc": [55.764438, 37.603882],
-  "name_code": "\\u041d\\u043e\\u0432\\u043e\\u043f\\u0443\\u0448\\u043a\\u0438\\u043d\\u0441\\u043a\\u0438\\u0439\\u0020\\u0441\\u043a\\u0432\\u0435\\u0440",
-  "img_url": "https://avatars.mds.yandex.net/get-altay/1871297/2a0000016b7ac5043dbbb5a64bc6a23556b7/XXXL",
-  "wiki_link": "None",
-  "marker_color": "beige",
-  "marker_icon": "tree",
-  "marker_icon_prefix": "fa"
-}
+{"name_id": "novopushkinsky_square", "loc": [55.764438, 37.603882], "name_code": "\\u041d\\u043e\\u0432\\u043e\\u043f\\u0443\\u0448\\u043a\\u0438\\u043d\\u0441\\u043a\\u0438\\u0439\\u0020\\u0441\\u043a\\u0432\\u0435\\u0440", "img_url": "https://avatars.mds.yandex.net/get-altay/1871297/2a0000016b7ac5043dbbb5a64bc6a23556b7/XXXL", "wiki_link": "None", "marker_color": "beige", "marker_icon": "tree", "marker_icon_prefix": "fa", "site_link": "", "text": ""}

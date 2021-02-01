@@ -1,10 +1,1 @@
-{
-  "name_id": "art_gallery_of_Ilya_glazunov",
-  "loc": [55.746539, 37.606768],
-  "name_code": "\\u041a\\u0430\\u0440\\u0442\\u0438\\u043d\\u043d\\u0430\\u044f\\u0020\\u0433\\u0430\\u043b\\u0435\\u0440\\u0435\\u044f\\u0020\\u0418\\u043b\\u044c\\u0438\\u0020\\u0413\\u043b\\u0430\\u0437\\u0443\\u043d\\u043e\\u0432\\u0430",
-  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Moscow_05-2012_Volkhonka_01.jpg/500px-Moscow_05-2012_Volkhonka_01.jpg",
-  "wiki_link": "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BD%D0%B0%D1%8F_%D0%B3%D0%B0%D0%BB%D0%B5%D1%80%D0%B5%D1%8F_%D0%98%D0%BB%D1%8C%D0%B8_%D0%93%D0%BB%D0%B0%D0%B7%D1%83%D0%BD%D0%BE%D0%B2%D0%B0",
-  "marker_color": "blue",
-  "marker_icon": "home",
-  "marker_icon_prefix": "fa"
-}
+{"name_id": "art_gallery_of_Ilya_glazunov", "loc": [55.746539, 37.606768], "name_code": "\\u041a\\u0430\\u0440\\u0442\\u0438\\u043d\\u043d\\u0430\\u044f\\u0020\\u0433\\u0430\\u043b\\u0435\\u0440\\u0435\\u044f\\u0020\\u0418\\u043b\\u044c\\u0438\\u0020\\u0413\\u043b\\u0430\\u0437\\u0443\\u043d\\u043e\\u0432\\u0430", "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Moscow_05-2012_Volkhonka_01.jpg/500px-Moscow_05-2012_Volkhonka_01.jpg", "wiki_link": "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BD%D0%B0%D1%8F_%D0%B3%D0%B0%D0%BB%D0%B5%D1%80%D0%B5%D1%8F_%D0%98%D0%BB%D1%8C%D0%B8_%D0%93%D0%BB%D0%B0%D0%B7%D1%83%D0%BD%D0%BE%D0%B2%D0%B0", "marker_color": "blue", "marker_icon": "home", "marker_icon_prefix": "fa", "site_link": "", "text": ""}

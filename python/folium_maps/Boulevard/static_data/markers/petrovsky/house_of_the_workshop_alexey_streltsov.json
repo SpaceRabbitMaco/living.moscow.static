@@ -1,10 +1,1 @@
-{
-  "name_id": "house_of_the_workshop_alexey_streltsov",
-  "loc": [55.768223, 37.617653],
-  "name_code": "\\u0414\\u043e\\u043c\\u0020\\u0446\\u0435\\u0445\\u043e\\u0432\\u043e\\u0433\\u043e\\u0020\\u0410\\u043b\\u0435\\u043a\\u0441\\u0435\\u044f\\u0020\\u0421\\u0442\\u0440\\u0435\\u043b\\u044c\\u0446\\u043e\\u0432\\u0430",
-  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Moscow%2C_Petrovsky_Boulevard_19-2_str1_.jpg/548px-Moscow%2C_Petrovsky_Boulevard_19-2_str1_.jpg",
-  "wiki_link": "https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D0%BC_%D1%86%D0%B5%D1%85%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D1%8F_%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D1%8C%D1%86%D0%BE%D0%B2%D0%B0",
-  "marker_color": "red",
-  "marker_icon": "star",
-  "marker_icon_prefix": "fa"
-}
+{"name_id": "house_of_the_workshop_alexey_streltsov", "loc": [55.768223, 37.617653], "name_code": "\\u0414\\u043e\\u043c\\u0020\\u0446\\u0435\\u0445\\u043e\\u0432\\u043e\\u0433\\u043e\\u0020\\u0410\\u043b\\u0435\\u043a\\u0441\\u0435\\u044f\\u0020\\u0421\\u0442\\u0440\\u0435\\u043b\\u044c\\u0446\\u043e\\u0432\\u0430", "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Moscow%2C_Petrovsky_Boulevard_19-2_str1_.jpg/548px-Moscow%2C_Petrovsky_Boulevard_19-2_str1_.jpg", "wiki_link": "https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D0%BC_%D1%86%D0%B5%D1%85%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D1%8F_%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D1%8C%D1%86%D0%BE%D0%B2%D0%B0", "marker_color": "red", "marker_icon": "star", "marker_icon_prefix": "fa", "site_link": "", "text": ""}

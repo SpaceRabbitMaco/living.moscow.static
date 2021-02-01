@@ -1,10 +1,1 @@
-{
-  "name_id": "cathedral_of_christ",
-  "loc": [55.742634, 37.606092],
-  "name_code": "\\u0414\\u043e\\u043c\\u0020\\u041f\\u0435\\u0440\\u0446\\u043e\\u0432\\u043e\\u0439",
-  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Moscow_05-2012_PertsovaHouse.jpg/548px-Moscow_05-2012_PertsovaHouse.jpg",
-  "wiki_link": "https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D0%BC_%D0%9F%D0%B5%D1%80%D1%86%D0%BE%D0%B2%D0%BE%D0%B9",
-  "marker_color": "blue",
-  "marker_icon": "star",
-  "marker_icon_prefix": "fa"
-}
+{"name_id": "cathedral_of_christ", "loc": [55.742634, 37.606092], "name_code": "\\u0414\\u043e\\u043c\\u0020\\u041f\\u0435\\u0440\\u0446\\u043e\\u0432\\u043e\\u0439", "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Moscow_05-2012_PertsovaHouse.jpg/548px-Moscow_05-2012_PertsovaHouse.jpg", "wiki_link": "https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D0%BC_%D0%9F%D0%B5%D1%80%D1%86%D0%BE%D0%B2%D0%BE%D0%B9", "marker_color": "blue", "marker_icon": "star", "marker_icon_prefix": "fa", "site_link": "", "text": ""}

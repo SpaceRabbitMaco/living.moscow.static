@@ -1,10 +1,1 @@
-{
-  "name_id": "moscow_post_office",
-  "loc": [55.764043, 37.637046],
-  "name_code": "\\u041c\\u043e\\u0441\\u043a\\u043e\\u0432\\u0441\\u043a\\u0438\\u0439\\u0020\\u043f\\u043e\\u0447\\u0442\\u0430\\u043c\\u0442",
-  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/%D0%9C%D1%8F%D1%81%D0%BD%D0%B8%D1%86%D0%BA%D0%B0%D1%8F_26_01.jpg/600px-%D0%9C%D1%8F%D1%81%D0%BD%D0%B8%D1%86%D0%BA%D0%B0%D1%8F_26_01.jpg",
-  "wiki_link": "https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BF%D0%BE%D1%87%D1%82%D0%B0%D0%BC%D1%82",
-  "marker_color": "darkblue",
-  "marker_icon": "star",
-  "marker_icon_prefix": "fa"
-}
+{"name_id": "moscow_post_office", "loc": [55.764043, 37.637046], "name_code": "\\u041c\\u043e\\u0441\\u043a\\u043e\\u0432\\u0441\\u043a\\u0438\\u0439\\u0020\\u043f\\u043e\\u0447\\u0442\\u0430\\u043c\\u0442", "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/%D0%9C%D1%8F%D1%81%D0%BD%D0%B8%D1%86%D0%BA%D0%B0%D1%8F_26_01.jpg/600px-%D0%9C%D1%8F%D1%81%D0%BD%D0%B8%D1%86%D0%BA%D0%B0%D1%8F_26_01.jpg", "wiki_link": "https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BF%D0%BE%D1%87%D1%82%D0%B0%D0%BC%D1%82", "marker_color": "darkblue", "marker_icon": "star", "marker_icon_prefix": "fa", "site_link": "", "text": ""}

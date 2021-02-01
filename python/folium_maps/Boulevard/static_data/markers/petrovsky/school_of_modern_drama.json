@@ -1,10 +1,1 @@
-{
-  "name_id": "school_of_modern_drama",
-  "loc": [55.766827, 37.621049],
-  "name_code": "\\u0428\\u043a\\u043e\\u043b\\u0430\\u0020\\u0441\\u043e\\u0432\\u0440\\u0435\\u043c\\u0435\\u043d\\u043d\\u043e\\u0439\\u0020\\u043f\\u044c\\u0435\\u0441\\u044b",
-  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Moscow%2C_Neglinnaya_29-14_June_2008_01.jpg/548px-Moscow%2C_Neglinnaya_29-14_June_2008_01.jpg",
-  "wiki_link": "https://ru.wikipedia.org/wiki/%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0_%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9_%D0%BF%D1%8C%D0%B5%D1%81%D1%8B",
-  "marker_color": "red",
-  "marker_icon": "home",
-  "marker_icon_prefix": "fa"
-}
+{"name_id": "school_of_modern_drama", "loc": [55.766827, 37.621049], "name_code": "\\u0428\\u043a\\u043e\\u043b\\u0430\\u0020\\u0441\\u043e\\u0432\\u0440\\u0435\\u043c\\u0435\\u043d\\u043d\\u043e\\u0439\\u0020\\u043f\\u044c\\u0435\\u0441\\u044b", "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Moscow%2C_Neglinnaya_29-14_June_2008_01.jpg/548px-Moscow%2C_Neglinnaya_29-14_June_2008_01.jpg", "wiki_link": "https://ru.wikipedia.org/wiki/%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0_%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9_%D0%BF%D1%8C%D0%B5%D1%81%D1%8B", "marker_color": "red", "marker_icon": "home", "marker_icon_prefix": "fa", "site_link": "https://neglinka29.ru/", "text": ""}

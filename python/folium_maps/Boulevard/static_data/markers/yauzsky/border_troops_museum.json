@@ -1,10 +1,1 @@
-{
-  "name_id": "border_troops_museum",
-  "loc": [55.750842, 37.645461],
-  "name_code": "\\u041c\\u0443\\u0437\\u0435\\u0439\\u0020\\u043f\\u043e\\u0433\\u0440\\u0430\\u043d\\u0438\\u0447\\u043d\\u044b\\u0445\\u0020\\u0432\\u043e\\u0439\\u0441\\u043a",
-  "img_url": "https://avatars.mds.yandex.net/get-altay/2812564/2a000001715b2ea7692adc96ca71d5944e69/XXXL",
-  "wiki_link": "https://ru.wikipedia.org/wiki/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BF%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%BD%D1%8B%D1%85_%D0%B2%D0%BE%D0%B9%D1%81%D0%BA",
-  "marker_color": "green",
-  "marker_icon": "home",
-  "marker_icon_prefix": "fa"
-}
+{"name_id": "border_troops_museum", "loc": [55.750842, 37.645461], "name_code": "\\u041c\\u0443\\u0437\\u0435\\u0439\\u0020\\u043f\\u043e\\u0433\\u0440\\u0430\\u043d\\u0438\\u0447\\u043d\\u044b\\u0445\\u0020\\u0432\\u043e\\u0439\\u0441\\u043a", "img_url": "https://avatars.mds.yandex.net/get-altay/2812564/2a000001715b2ea7692adc96ca71d5944e69/XXXL", "wiki_link": "https://ru.wikipedia.org/wiki/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BF%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%BD%D1%8B%D1%85_%D0%B2%D0%BE%D0%B9%D1%81%D0%BA", "marker_color": "green", "marker_icon": "home", "marker_icon_prefix": "fa", "site_link": "http://ps.fsb.ru/history/museum.htm", "text": ""}

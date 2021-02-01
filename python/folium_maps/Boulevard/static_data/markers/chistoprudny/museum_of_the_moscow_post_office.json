@@ -1,10 +1,1 @@
-{
-  "name_id": "museum_of_the_moscow_post_office",
-  "loc": [55.764115, 37.638165],
-  "name_code": "\\u041c\\u0443\\u0437\\u0435\\u0439\\u0020\\u043f\\u043e\\u0447\\u0442\\u043e\\u0432\\u043e\\u0439\\u0020\\u0441\\u0432\\u044f\\u0437\\u0438\\u0020\\u0438\\u0020\\u041c\\u043e\\u0441\\u043a\\u043e\\u0432\\u0441\\u043a\\u043e\\u0433\\u043e\\u0020\\u043f\\u043e\\u0447\\u0442\\u0430\\u043c\\u0442\\u0430",
-  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Moscow%2C_main_post_office.jpg/500px-Moscow%2C_main_post_office.jpg",
-  "wiki_link": "https://ru.wikipedia.org/wiki/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BF%D0%BE%D1%87%D1%82%D0%BE%D0%B2%D0%BE%D0%B9_%D1%81%D0%B2%D1%8F%D0%B7%D0%B8_%D0%B8_%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BF%D0%BE%D1%87%D1%82%D0%B0%D0%BC%D1%82%D0%B0",
-  "marker_color": "darkblue",
-  "marker_icon": "star",
-  "marker_icon_prefix": "fa"
-}
+{"name_id": "museum_of_the_moscow_post_office", "loc": [55.764115, 37.638165], "name_code": "\\u041c\\u0443\\u0437\\u0435\\u0439\\u0020\\u043f\\u043e\\u0447\\u0442\\u043e\\u0432\\u043e\\u0439\\u0020\\u0441\\u0432\\u044f\\u0437\\u0438\\u0020\\u0438\\u0020\\u041c\\u043e\\u0441\\u043a\\u043e\\u0432\\u0441\\u043a\\u043e\\u0433\\u043e\\u0020\\u043f\\u043e\\u0447\\u0442\\u0430\\u043c\\u0442\\u0430", "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Moscow%2C_main_post_office.jpg/500px-Moscow%2C_main_post_office.jpg", "wiki_link": "https://ru.wikipedia.org/wiki/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BF%D0%BE%D1%87%D1%82%D0%BE%D0%B2%D0%BE%D0%B9_%D1%81%D0%B2%D1%8F%D0%B7%D0%B8_%D0%B8_%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BF%D0%BE%D1%87%D1%82%D0%B0%D0%BC%D1%82%D0%B0", "marker_color": "darkblue", "marker_icon": "home", "marker_icon_prefix": "fa", "site_link": "http://www.museum.ru/M1705", "text": ""}

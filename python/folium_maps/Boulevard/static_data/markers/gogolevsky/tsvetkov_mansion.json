@@ -1,10 +1,1 @@
-{
-  "name_id": "tsvetkov_mansion",
-  "loc": [55.741662, 37.606523],
-  "name_code": "\\u041e\\u0441\\u043e\\u0431\\u043d\\u044f\\u043a\\u0020\\u0426\\u0432\\u0435\\u0442\\u043a\\u043e\\u0432\\u0430",
-  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/%D0%A4%D0%B0%D1%81%D0%B0%D0%B4_%D0%BE%D1%81%D0%BE%D0%B1%D0%BD%D1%8F%D0%BA%D0%B0_%D0%A6%D0%B2%D0%B5%D1%82%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9_%D0%BF%D0%BE%D1%81%D0%BB%D0%B5_%D1%80%D0%B5%D1%81%D1%82%D0%B0%D0%B2%D1%80%D0%B0%D1%86%D0%B8%D0%B8_2016_%D0%B3%D0%BE%D0%B4%D0%B0.jpg/586px-%D0%A4%D0%B0%D1%81%D0%B0%D0%B4_%D0%BE%D1%81%D0%BE%D0%B1%D0%BD%D1%8F%D0%BA%D0%B0_%D0%A6%D0%B2%D0%B5%D1%82%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9_%D0%BF%D0%BE%D1%81%D0%BB%D0%B5_%D1%80%D0%B5%D1%81%D1%82%D0%B0%D0%B2%D1%80%D0%B0%D1%86%D0%B8%D0%B8_2016_%D0%B3%D0%BE%D0%B4%D0%B0.jpg",
-  "wiki_link": "https://ru.wikipedia.org/wiki/%D0%9E%D1%81%D0%BE%D0%B1%D0%BD%D1%8F%D0%BA_%D0%A6%D0%B2%D0%B5%D1%82%D0%BA%D0%BE%D0%B2%D0%B0",
-  "marker_color": "blue",
-  "marker_icon": "star",
-  "marker_icon_prefix": "fa"
-}
+{"name_id": "tsvetkov_mansion", "loc": [55.741662, 37.606523], "name_code": "\\u041e\\u0441\\u043e\\u0431\\u043d\\u044f\\u043a\\u0020\\u0426\\u0432\\u0435\\u0442\\u043a\\u043e\\u0432\\u0430", "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/%D0%A4%D0%B0%D1%81%D0%B0%D0%B4_%D0%BE%D1%81%D0%BE%D0%B1%D0%BD%D1%8F%D0%BA%D0%B0_%D0%A6%D0%B2%D0%B5%D1%82%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9_%D0%BF%D0%BE%D1%81%D0%BB%D0%B5_%D1%80%D0%B5%D1%81%D1%82%D0%B0%D0%B2%D1%80%D0%B0%D1%86%D0%B8%D0%B8_2016_%D0%B3%D0%BE%D0%B4%D0%B0.jpg/586px-%D0%A4%D0%B0%D1%81%D0%B0%D0%B4_%D0%BE%D1%81%D0%BE%D0%B1%D0%BD%D1%8F%D0%BA%D0%B0_%D0%A6%D0%B2%D0%B5%D1%82%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9_%D0%BF%D0%BE%D1%81%D0%BB%D0%B5_%D1%80%D0%B5%D1%81%D1%82%D0%B0%D0%B2%D1%80%D0%B0%D1%86%D0%B8%D0%B8_2016_%D0%B3%D0%BE%D0%B4%D0%B0.jpg", "wiki_link": "https://ru.wikipedia.org/wiki/%D0%9E%D1%81%D0%BE%D0%B1%D0%BD%D1%8F%D0%BA_%D0%A6%D0%B2%D0%B5%D1%82%D0%BA%D0%BE%D0%B2%D0%B0", "marker_color": "blue", "marker_icon": "star", "marker_icon_prefix": "fa", "site_link": "", "text": ""}

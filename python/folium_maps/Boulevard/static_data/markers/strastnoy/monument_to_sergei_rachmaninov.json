@@ -1,10 +1,1 @@
-{
-  "name_id": "monument_to_sergei_rachmaninov",
-  "loc": [55.767586, 37.611250],
-  "name_code": "\\u041f\\u0430\\u043c\\u044f\\u0442\\u043d\\u0438\\u043a\\u0020\\u0421\\u0435\\u0440\\u0433\\u0435\\u044e\\u0020\\u0420\\u0430\\u0445\\u043c\\u0430\\u043d\\u0438\\u043d\\u043e\\u0432\\u0443",
-  "img_url": "https://upload.wikimedia.org/wikipedia/ru/thumb/6/66/%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A0%D0%B0%D1%85%D0%BC%D0%B0%D0%BD%D0%B8%D0%BD%D0%BE%D0%B2%D1%83_%28%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C_2018%29.jpg/548px-%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A0%D0%B0%D1%85%D0%BC%D0%B0%D0%BD%D0%B8%D0%BD%D0%BE%D0%B2%D1%83_%28%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C_2018%29.jpg",
-  "wiki_link": "https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D1%8E_%D0%A0%D0%B0%D1%85%D0%BC%D0%B0%D0%BD%D0%B8%D0%BD%D0%BE%D0%B2%D1%83_(%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0)",
-  "marker_color": "orange",
-  "marker_icon": "star",
-  "marker_icon_prefix": "fa"
-}
+{"name_id": "monument_to_sergei_rachmaninov", "loc": [55.767586, 37.61125], "name_code": "\\u041f\\u0430\\u043c\\u044f\\u0442\\u043d\\u0438\\u043a\\u0020\\u0421\\u0435\\u0440\\u0433\\u0435\\u044e\\u0020\\u0420\\u0430\\u0445\\u043c\\u0430\\u043d\\u0438\\u043d\\u043e\\u0432\\u0443", "img_url": "https://upload.wikimedia.org/wikipedia/ru/thumb/6/66/%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A0%D0%B0%D1%85%D0%BC%D0%B0%D0%BD%D0%B8%D0%BD%D0%BE%D0%B2%D1%83_%28%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C_2018%29.jpg/548px-%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A0%D0%B0%D1%85%D0%BC%D0%B0%D0%BD%D0%B8%D0%BD%D0%BE%D0%B2%D1%83_%28%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C_2018%29.jpg", "wiki_link": "https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D1%8E_%D0%A0%D0%B0%D1%85%D0%BC%D0%B0%D0%BD%D0%B8%D0%BD%D0%BE%D0%B2%D1%83_(%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0)", "marker_color": "orange", "marker_icon": "star", "marker_icon_prefix": "fa", "site_link": "", "text": ""}
